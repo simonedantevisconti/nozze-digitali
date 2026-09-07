@@ -11,12 +11,14 @@ const HomePage = () => {
               <div className="home-hero-content">
                 <p className="home-eyebrow">NOZZE DIGITALI</p>
 
-                <h1>Organizzare il matrimonio può essere più semplice.</h1>
+                <h1>
+                  Organizzare le vostre nozze non è mai stato così semplice
+                </h1>
 
                 <p className="home-hero-text">
-                  Un unico spazio digitale, personalizzato per voi, dove gestire
-                  invitati, conferme, tavoli, aggiornamenti e tutte le
-                  informazioni utili fino al grande giorno.
+                  Un unico spazio digitale personalizzato, dove creare le
+                  partecipazioni, gestire le conferme, organizzare i tavoli e
+                  molto altro ancora.
                 </p>
 
                 <div className="home-hero-actions">
@@ -71,12 +73,12 @@ const HomePage = () => {
 
                 <div className="hero-card hero-card-food">
                   <span>✦</span>
-                  Esigenze alimentari
+                  Foto
                 </div>
 
                 <div className="hero-card hero-card-photos">
                   <span>◌</span>
-                  Foto
+                  Esigenze alimentari
                 </div>
               </div>
             </div>
@@ -90,12 +92,11 @@ const HomePage = () => {
             <div className="home-video-heading">
               <p className="home-section-eyebrow">SCOPRI COME FUNZIONA</p>
 
-              <h2>Tutto il matrimonio, in un unico spazio.</h2>
+              <h2>Tutto il matrimonio, in un unico spazio</h2>
 
               <p>
-                Guarda una panoramica di Nozze Digitali e scopri come può
-                aiutarti a gestire invitati, conferme, tavoli, aggiornamenti e
-                molto altro.
+                Guarda una panoramica di Nozze Digitali e scopri quanto è
+                semplice organizzare il vostro matrimonio.
               </p>
             </div>
           </Reveal>
@@ -104,7 +105,7 @@ const HomePage = () => {
             <div className="home-video-wrapper">
               <div className="ratio ratio-16x9">
                 <iframe
-                  src="https://www.youtube.com/embed/VIDEO_ID"
+                  src="https://www.youtube.com/embed/xpvonnf1ALY"
                   title="Scopri Nozze Digitali"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -121,12 +122,12 @@ const HomePage = () => {
             <div className="home-benefits-heading">
               <p className="home-section-eyebrow">TUTTO SOTTO CONTROLLO</p>
 
-              <h2>Più ordine per voi, più semplicità per i vostri invitati.</h2>
+              <h2>Più ordine per voi, più semplicità per i vostri invitati</h2>
 
               <p>
                 Nozze Digitali raccoglie in un unico spazio tutto ciò che serve
-                prima del grande giorno, così evitate messaggi sparsi, fogli,
-                chat e informazioni difficili da gestire.
+                per il vostro grande giorno, dall'organizzazione dei tavoli alle
+                esigenze alimentari dei vostri ospiti.
               </p>
             </div>
           </Reveal>

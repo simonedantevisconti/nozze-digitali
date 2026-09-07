@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         <div className="header-inner">
           <a href="/" className="header-logo" aria-label="Nozze Digitali">
-            <img src="/favicon-nozze.png" alt="Logo Nozze Digitali" />
+            <img src="/favicon-nozze-naked.png" alt="Logo Nozze Digitali" />
           </a>
 
           <a href="/" className="header-brand">
