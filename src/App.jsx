@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import DefaultLayout from "./layouts/DefaultLayout";
+
 import HomePage from "./pages/HomePage";
 import SitoMatrimonioPage from "./pages/SitoMatrimonioPage";
 import PartecipazioniDigitaliPage from "./pages/PartecipazioniDigitaliPage";
@@ -22,14 +23,14 @@ const App = () => {
             path="/partecipazioni-digitali"
             element={<PartecipazioniDigitaliPage />}
           />
+
+          <Route path="/rsvp-matrimonio" element={<RsvpMatrimonioPage />} />
+
+          <Route
+            path="/gestione-invitati-matrimonio"
+            element={<GestioneInvitatiMatrimonioPage />}
+          />
         </Route>
-
-        <Route path="/rsvp-matrimonio" element={<RsvpMatrimonioPage />} />
-
-        <Route
-          path="/gestione-invitati-matrimonio"
-          element={<GestioneInvitatiMatrimonioPage />}
-        />
       </Routes>
     </>
   );
