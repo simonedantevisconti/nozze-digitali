@@ -76,6 +76,9 @@ const SitoMatrimonioPage = () => {
                   direttamente dal sito, rendendo più semplice la gestione delle
                   partecipazioni.
                 </p>
+                <a href="/rsvp-matrimonio" className="wedding-site-card-link">
+                  Scopri l&apos;RSVP matrimonio
+                </a>
               </article>
 
               <article className="wedding-site-card">
