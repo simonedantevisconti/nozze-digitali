@@ -3,6 +3,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import SitoMatrimonioPage from "./pages/SitoMatrimonioPage";
+import PartecipazioniDigitaliPage from "./pages/PartecipazioniDigitaliPage";
 
 const App = () => {
   return (
@@ -12,7 +13,13 @@ const App = () => {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePage />} />
+
           <Route path="/sito-matrimonio" element={<SitoMatrimonioPage />} />
+
+          <Route
+            path="/partecipazioni-digitali"
+            element={<PartecipazioniDigitaliPage />}
+          />
         </Route>
       </Routes>
     </>

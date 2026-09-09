@@ -1,0 +1,315 @@
+.digital-invitations-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Breadcrumb */
+
+.digital-invitations-breadcrumb {
+  padding-top: 1.5rem;
+}
+
+.digital-invitations-breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.digital-invitations-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.digital-invitations-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+
+.digital-invitations-hero {
+  position: relative;
+  padding: 7rem 0 4.5rem;
+  text-align: center;
+}
+
+.digital-invitations-hero::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(190, 126, 130, 0.08);
+  filter: blur(8px);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.digital-invitations-hero .container,
+.digital-invitations-content,
+.digital-invitations-how-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1080px;
+}
+
+.digital-invitations-eyebrow {
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.digital-invitations-hero h1 {
+  max-width: 900px;
+  margin: 0 auto 1.75rem;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.digital-invitations-intro {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  opacity: 0.78;
+}
+
+/* Main content */
+
+.digital-invitations-section {
+  padding: 4rem 0 7rem;
+}
+
+.digital-invitations-content > h2,
+.digital-invitations-how h2 {
+  max-width: 760px;
+  margin: 0 auto 1.25rem;
+  text-align: center;
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.digital-invitations-content > p {
+  max-width: 760px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.76;
+}
+
+/* Cards */
+
+.digital-invitations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.digital-invitations-card {
+  padding: 2rem;
+  border: 1px solid rgba(80, 60, 55, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.digital-invitations-card::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-bottom: 1.4rem;
+  border-radius: 999px;
+  background: #be7e82;
+}
+
+.digital-invitations-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(190, 126, 130, 0.3);
+  box-shadow: 0 18px 45px rgba(80, 60, 55, 0.08);
+}
+
+.digital-invitations-card h3 {
+  margin-bottom: 0.85rem;
+  font-size: 1.35rem;
+}
+
+.digital-invitations-card p {
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.76;
+}
+
+/* How it works */
+
+.digital-invitations-how {
+  padding: 0 0 7rem;
+}
+
+.digital-invitations-how .digital-invitations-eyebrow {
+  text-align: center;
+}
+
+.digital-invitations-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.digital-invitations-steps article {
+  text-align: center;
+  padding: 2rem;
+}
+
+.digital-invitations-steps span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #be7e82;
+}
+
+.digital-invitations-steps h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+}
+
+.digital-invitations-steps p {
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.76;
+}
+
+/* CTA */
+
+.digital-invitations-cta {
+  padding: 0 0 7rem;
+}
+
+.digital-invitations-cta-box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(190, 126, 130, 0.18);
+  border-radius: 28px;
+  background: rgba(190, 126, 130, 0.08);
+}
+
+.digital-invitations-cta-box h2 {
+  max-width: 720px;
+  margin: 0 auto 1.25rem;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.1;
+}
+
+.digital-invitations-cta-box p:not(.digital-invitations-eyebrow) {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.78;
+}
+
+.digital-invitations-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.95rem 1.6rem;
+  border-radius: 999px;
+  background: #be7e82;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.digital-invitations-cta-button:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .digital-invitations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .digital-invitations-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .digital-invitations-breadcrumb {
+    padding-top: 1rem;
+  }
+
+  .digital-invitations-hero {
+    padding: 5rem 0 3.5rem;
+  }
+
+  .digital-invitations-hero::before {
+    top: -130px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .digital-invitations-hero h1 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .digital-invitations-intro {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .digital-invitations-section {
+    padding: 2.5rem 0 5rem;
+  }
+
+  .digital-invitations-content > p {
+    margin-bottom: 2.5rem;
+  }
+
+  .digital-invitations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-invitations-card {
+    padding: 1.6rem;
+  }
+
+  .digital-invitations-how {
+    padding-bottom: 5rem;
+  }
+
+  .digital-invitations-cta {
+    padding-bottom: 5rem;
+  }
+
+  .digital-invitations-cta-box {
+    padding: 3rem 1.5rem;
+    border-radius: 22px;
+  }
+}
