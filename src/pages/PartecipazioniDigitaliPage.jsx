@@ -78,6 +78,13 @@ const PartecipazioniDigitaliPage = () => {
                   La partecipazione può essere confermata direttamente online,
                   semplificando la gestione degli invitati.
                 </p>
+
+                <a
+                  href="/rsvp-matrimonio"
+                  className="digital-invitations-card-link"
+                >
+                  Scopri come funziona l&apos;RSVP online
+                </a>
               </article>
 
               <article className="digital-invitations-card">

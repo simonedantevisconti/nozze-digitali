@@ -205,6 +205,18 @@
   text-decoration: underline;
 }
 
+.digital-invitations-card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #be7e82;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.digital-invitations-card-link:hover {
+  text-decoration: underline;
+}
+
 /* CTA */
 
 .digital-invitations-cta {
