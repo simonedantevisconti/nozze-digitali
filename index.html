@@ -1,29 +1,23 @@
 <!doctype html>
 <html lang="it">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://nozzedigitali.site/#website",
-      "url": "https://nozzedigitali.site/",
-      "name": "Nozze Digitali",
-      "description": "Siti web personalizzati per matrimoni con partecipazioni digitali, RSVP, gestione invitati, tavoli, foto e informazioni."
-    }
-  </script>
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-nozze.png" />
-    <link rel="apple-touch-icon" href="/favicon-nozze.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-nozze.png" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-nozze.png" />
     <link rel="apple-touch-icon" href="/favicon-nozze.png" />
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -31,7 +25,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- SEO -->
     <title>
       Nozze Digitali | Sito Web per Matrimonio e Partecipazioni Digitali
@@ -46,7 +40,7 @@
 
     <link rel="canonical" href="https://nozzedigitali.site/" />
 
-    <!-- Open Graph -->
+    <!-- OPEN GRAPH -->
     <meta
       property="og:title"
       content="Nozze Digitali | Il tuo matrimonio in un unico spazio digitale"
@@ -61,13 +55,19 @@
     <meta property="og:url" content="https://nozzedigitali.site/" />
     <meta property="og:locale" content="it_IT" />
     <meta property="og:site_name" content="Nozze Digitali" />
+
     <meta
       property="og:image"
       content="https://nozzedigitali.site/og-nozze-digitali.png"
     />
 
-    <meta property="og:image:width" content="1200" />
+    <meta
+      property="og:image:secure_url"
+      content="https://nozzedigitali.site/og-nozze-digitali.png"
+    />
 
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <meta
@@ -75,8 +75,9 @@
       content="Nozze Digitali - sito web personalizzato per il matrimonio"
     />
 
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary" />
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+
     <meta
       name="twitter:title"
       content="Nozze Digitali | Il tuo matrimonio in un unico spazio digitale"
@@ -86,15 +87,40 @@
       name="twitter:description"
       content="Partecipazioni digitali, RSVP, tavoli, foto e gestione degli invitati in un unico sito personalizzato."
     />
+
+    <meta
+      name="twitter:image"
+      content="https://nozzedigitali.site/og-nozze-digitali.png"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="Nozze Digitali - sito web personalizzato per il matrimonio"
+    />
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://nozzedigitali.site/#website",
+        "url": "https://nozzedigitali.site/",
+        "name": "Nozze Digitali",
+        "description": "Siti web personalizzati per matrimoni con partecipazioni digitali, RSVP, gestione invitati, tavoli, foto e informazioni."
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- BOOTSTRAP JS -->
   </body>
 </html>
