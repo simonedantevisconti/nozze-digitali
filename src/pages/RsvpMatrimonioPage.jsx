@@ -65,6 +65,13 @@ const RsvpMatrimonioPage = () => {
                   Tutte le conferme vengono raccolte in un unico spazio,
                   evitando messaggi dispersi.
                 </p>
+
+                <a
+                  href="/gestione-invitati-matrimonio"
+                  className="rsvp-related-link"
+                >
+                  Scopri come organizzare gli invitati
+                </a>
               </article>
 
               <article className="rsvp-card">

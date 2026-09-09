@@ -85,6 +85,13 @@ const SitoMatrimonioPage = () => {
                   Tenete sotto controllo conferme, esigenze alimentari e altre
                   informazioni utili attraverso un&apos;unica area organizzata.
                 </p>
+
+                <a
+                  href="/gestione-invitati-matrimonio"
+                  className="wedding-site-card-link"
+                >
+                  Scopri come gestire gli invitati
+                </a>
               </article>
 
               <article className="wedding-site-card">
