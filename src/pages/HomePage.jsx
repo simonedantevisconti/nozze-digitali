@@ -102,9 +102,18 @@ const HomePage = () => {
               gestire tutto da un'area riservata.
             </p>
 
-            <Link to="/sito-matrimonio" className="home-intro-link">
-              Scopri come funziona
-            </Link>
+            <div className="home-intro-links">
+              <Link to="/sito-matrimonio" className="home-intro-link">
+                Scopri il sito matrimonio
+              </Link>
+
+              <Link
+                to="/partecipazioni-digitali"
+                className="home-intro-secondary-link"
+              >
+                Scopri le partecipazioni digitali
+              </Link>
+            </div>
           </div>
         </div>
       </section>

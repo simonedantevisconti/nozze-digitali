@@ -529,6 +529,42 @@
   opacity: 0.92;
 }
 
+.home-intro-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.home-intro-link {
+  margin-top: 0;
+}
+
+.home-intro-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid rgba(190, 126, 130, 0.35);
+  border-radius: 999px;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.home-intro-secondary-link:hover {
+  color: inherit;
+  transform: translateY(-2px);
+  border-color: #be7e82;
+  background: rgba(190, 126, 130, 0.06);
+}
+
 /* =========================
    TABLET
 ========================= */
@@ -659,6 +695,15 @@
 
   .hero-card-photos {
     right: 0;
+  }
+
+  .home-intro-links {
+    flex-direction: column;
+  }
+
+  .home-intro-link,
+  .home-intro-secondary-link {
+    width: 100%;
   }
 }
 

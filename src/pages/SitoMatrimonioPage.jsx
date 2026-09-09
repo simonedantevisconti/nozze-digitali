@@ -59,6 +59,13 @@ const SitoMatrimonioPage = () => {
                   mantenendo tutte le informazioni del matrimonio sempre
                   disponibili.
                 </p>
+
+                <a
+                  href="/partecipazioni-digitali"
+                  className="wedding-site-card-link"
+                >
+                  Scopri le partecipazioni digitali
+                </a>
               </article>
 
               <article className="wedding-site-card">

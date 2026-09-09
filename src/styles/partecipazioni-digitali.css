@@ -193,6 +193,18 @@
   opacity: 0.76;
 }
 
+.wedding-site-card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #be7e82;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.wedding-site-card-link:hover {
+  text-decoration: underline;
+}
+
 /* CTA */
 
 .digital-invitations-cta {
