@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import SitoMatrimonioPage from "./pages/SitoMatrimonioPage";
 import PartecipazioniDigitaliPage from "./pages/PartecipazioniDigitaliPage";
 import RsvpMatrimonioPage from "./pages/RsvpMatrimonioPage";
+import GestioneInvitatiMatrimonioPage from "./pages/GestioneInvitatiMatrimonioPage";
 
 const App = () => {
   return (
@@ -24,6 +25,11 @@ const App = () => {
         </Route>
 
         <Route path="/rsvp-matrimonio" element={<RsvpMatrimonioPage />} />
+
+        <Route
+          path="/gestione-invitati-matrimonio"
+          element={<GestioneInvitatiMatrimonioPage />}
+        />
       </Routes>
     </>
   );
