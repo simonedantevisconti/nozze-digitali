@@ -1,9 +1,10 @@
-import "../styles/sito-matrimonio.css";
-
 import { useEffect } from "react";
 import "../styles/sito-matrimonio.css";
 
 const SitoMatrimonioPage = () => {
+  const whatsappLink =
+    "https://wa.me/393451287102?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20su%20Nozze%20Digitali%20e%20richiedere%20un%20preventivo.";
+
   useEffect(() => {
     document.title = "Sito Web per Matrimonio Personalizzato | Nozze Digitali";
 
@@ -45,7 +46,7 @@ const SitoMatrimonioPage = () => {
       canonical?.setAttribute("href", "https://nozzedigitali.site/");
     };
   }, []);
-  
+
   return (
     <main className="wedding-site-page">
       <section className="wedding-site-hero">
@@ -125,6 +126,30 @@ const SitoMatrimonioPage = () => {
                 coppia.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="wedding-site-cta">
+        <div className="container">
+          <div className="wedding-site-cta-box">
+            <p className="wedding-site-eyebrow">IL VOSTRO SPAZIO DIGITALE</p>
+
+            <h2>Pronti a creare il sito del vostro matrimonio?</h2>
+
+            <p>
+              Raccontateci come immaginate il vostro giorno e costruiamo insieme
+              uno spazio digitale semplice, elegante e personalizzato.
+            </p>
+
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="wedding-site-cta-button"
+            >
+              Richiedi preventivo
+            </a>
           </div>
         </div>
       </section>

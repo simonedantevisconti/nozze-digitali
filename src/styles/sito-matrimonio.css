@@ -122,6 +122,56 @@
   opacity: 0.76;
 }
 
+.wedding-site-cta {
+  padding: 0 0 7rem;
+}
+
+.wedding-site-cta-box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 28px;
+  background: rgba(190, 126, 130, 0.08);
+  border: 1px solid rgba(190, 126, 130, 0.18);
+}
+
+.wedding-site-cta-box h2 {
+  max-width: 720px;
+  margin: 0 auto 1.25rem;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.1;
+}
+
+.wedding-site-cta-box p:not(.wedding-site-eyebrow) {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: 0.78;
+}
+
+.wedding-site-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.95rem 1.6rem;
+  border-radius: 999px;
+  background: #be7e82;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.wedding-site-cta-button:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
 @media (max-width: 991px) {
   .wedding-site-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -167,5 +217,14 @@
 
   .wedding-site-card {
     padding: 1.6rem;
+  }
+
+  .wedding-site-cta {
+    padding-bottom: 5rem;
+  }
+
+  .wedding-site-cta-box {
+    padding: 3rem 1.5rem;
+    border-radius: 22px;
   }
 }
