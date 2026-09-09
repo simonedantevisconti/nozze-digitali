@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 
 const HomePage = () => {
@@ -100,6 +101,10 @@ const HomePage = () => {
               esigenze alimentari e condividere fotografie, mentre voi potete
               gestire tutto da un'area riservata.
             </p>
+
+            <Link to="/sito-matrimonio" className="home-intro-link">
+              Scopri come funziona
+            </Link>
           </div>
         </div>
       </section>
