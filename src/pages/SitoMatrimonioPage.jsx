@@ -1,6 +1,51 @@
 import "../styles/sito-matrimonio.css";
 
+import { useEffect } from "react";
+import "../styles/sito-matrimonio.css";
+
 const SitoMatrimonioPage = () => {
+  useEffect(() => {
+    document.title = "Sito Web per Matrimonio Personalizzato | Nozze Digitali";
+
+    const description =
+      "Crea un sito web personalizzato per il tuo matrimonio con RSVP, partecipazioni digitali, gestione invitati, tavoli, foto e informazioni utili.";
+
+    let metaDescription = document.querySelector('meta[name="description"]');
+
+    if (!metaDescription) {
+      metaDescription = document.createElement("meta");
+      metaDescription.setAttribute("name", "description");
+      document.head.appendChild(metaDescription);
+    }
+
+    metaDescription.setAttribute("content", description);
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+
+    canonical.setAttribute(
+      "href",
+      "https://nozzedigitali.site/sito-matrimonio",
+    );
+
+    return () => {
+      document.title =
+        "Nozze Digitali | Sito Web per Matrimonio e Partecipazioni Digitali";
+
+      metaDescription?.setAttribute(
+        "content",
+        "Crea il sito web del tuo matrimonio con partecipazioni digitali, conferme RSVP, gestione invitati, tavoli, foto, esigenze alimentari e tutte le informazioni del grande giorno.",
+      );
+
+      canonical?.setAttribute("href", "https://nozzedigitali.site/");
+    };
+  }, []);
+  
   return (
     <main className="wedding-site-page">
       <section className="wedding-site-hero">
