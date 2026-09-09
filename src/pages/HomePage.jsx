@@ -12,7 +12,8 @@ const HomePage = () => {
                 <p className="home-eyebrow">NOZZE DIGITALI</p>
 
                 <h1>
-                  Organizzare le vostre nozze non è mai stato così semplice
+                  Il sito web per il vostro matrimonio, tutto in un unico spazio
+                  digitale
                 </h1>
 
                 <p className="home-hero-text">
@@ -82,6 +83,23 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-intro-section">
+        <div className="container">
+          <div className="home-intro-content">
+            <h2>Un sito web personalizzato per il vostro matrimonio</h2>
+
+            <p>
+              Nozze Digitali vi permette di raccogliere tutto ciò che riguarda
+              il vostro matrimonio in un unico sito web personalizzato. Gli
+              invitati possono consultare le informazioni dell'evento,
+              confermare la propria partecipazione, comunicare allergie o
+              esigenze alimentari e condividere fotografie, mentre voi potete
+              gestire tutto da un'area riservata.
+            </p>
           </div>
         </div>
       </section>
