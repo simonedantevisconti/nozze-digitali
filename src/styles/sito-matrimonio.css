@@ -3,31 +3,56 @@
   overflow: hidden;
 }
 
+/* Breadcrumb */
+
+.wedding-site-breadcrumb {
+  padding-top: 1.5rem;
+}
+
+.wedding-site-breadcrumb .container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.wedding-site-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wedding-site-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+
 .wedding-site-hero {
+  position: relative;
   padding: 7rem 0 4.5rem;
   text-align: center;
-  position: relative;
 }
 
 .wedding-site-hero::before {
   content: "";
   position: absolute;
+  top: -180px;
+  left: 50%;
   width: 420px;
   height: 420px;
   border-radius: 50%;
   background: rgba(190, 126, 130, 0.08);
-  top: -180px;
-  left: 50%;
-  transform: translateX(-50%);
   filter: blur(8px);
+  transform: translateX(-50%);
   pointer-events: none;
 }
 
 .wedding-site-hero .container,
 .wedding-site-content {
-  max-width: 1080px;
   position: relative;
   z-index: 1;
+  max-width: 1080px;
 }
 
 .wedding-site-eyebrow {
@@ -54,6 +79,8 @@
   opacity: 0.78;
 }
 
+/* Main section */
+
 .wedding-site-section {
   padding: 4rem 0 7rem;
 }
@@ -75,6 +102,8 @@
   opacity: 0.76;
 }
 
+/* Cards */
+
 .wedding-site-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -94,12 +123,6 @@
     border-color 0.25s ease;
 }
 
-.wedding-site-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(190, 126, 130, 0.3);
-  box-shadow: 0 18px 45px rgba(80, 60, 55, 0.08);
-}
-
 .wedding-site-card::before {
   content: "";
   display: block;
@@ -108,6 +131,12 @@
   margin-bottom: 1.4rem;
   border-radius: 999px;
   background: #be7e82;
+}
+
+.wedding-site-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(190, 126, 130, 0.3);
+  box-shadow: 0 18px 45px rgba(80, 60, 55, 0.08);
 }
 
 .wedding-site-card h3 {
@@ -122,6 +151,8 @@
   opacity: 0.76;
 }
 
+/* CTA */
+
 .wedding-site-cta {
   padding: 0 0 7rem;
 }
@@ -131,9 +162,9 @@
   margin: 0 auto;
   padding: 4rem 2rem;
   text-align: center;
+  border: 1px solid rgba(190, 126, 130, 0.18);
   border-radius: 28px;
   background: rgba(190, 126, 130, 0.08);
-  border: 1px solid rgba(190, 126, 130, 0.18);
 }
 
 .wedding-site-cta-box h2 {
@@ -172,6 +203,8 @@
   opacity: 0.92;
 }
 
+/* Tablet */
+
 @media (max-width: 991px) {
   .wedding-site-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -182,15 +215,21 @@
   }
 }
 
+/* Mobile */
+
 @media (max-width: 767px) {
+  .wedding-site-breadcrumb {
+    padding-top: 1rem;
+  }
+
   .wedding-site-hero {
     padding: 5rem 0 3.5rem;
   }
 
   .wedding-site-hero::before {
+    top: -130px;
     width: 280px;
     height: 280px;
-    top: -130px;
   }
 
   .wedding-site-hero h1 {
