@@ -4,6 +4,7 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import SitoMatrimonioPage from "./pages/SitoMatrimonioPage";
 import PartecipazioniDigitaliPage from "./pages/PartecipazioniDigitaliPage";
+import RsvpMatrimonioPage from "./pages/RsvpMatrimonioPage";
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
             element={<PartecipazioniDigitaliPage />}
           />
         </Route>
+
+        <Route path="/rsvp-matrimonio" element={<RsvpMatrimonioPage />} />
       </Routes>
     </>
   );
