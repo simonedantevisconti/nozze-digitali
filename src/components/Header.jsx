@@ -10,7 +10,12 @@ const Header = () => {
       <div className="container">
         <div className="header-inner">
           <Link to="/" className="header-logo" aria-label="Nozze Digitali">
-            <img src="/favicon-nozze-naked.png" alt="Logo Nozze Digitali" />
+            <img
+              src="/logo-nozze.webp"
+              alt="Logo Nozze Digitali"
+              width="52"
+              height="52"
+            />
           </Link>
 
           <Link to="/" className="header-brand">
