@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/header.css";
 
 const Header = () => {
@@ -8,13 +9,18 @@ const Header = () => {
     <header className="site-header">
       <div className="container">
         <div className="header-inner">
-          <a href="/" className="header-logo" aria-label="Nozze Digitali">
+          <Link to="/" className="header-logo" aria-label="Nozze Digitali">
             <img src="/favicon-nozze-naked.png" alt="Logo Nozze Digitali" />
-          </a>
+          </Link>
 
-          <a href="/" className="header-brand">
+          <Link to="/" className="header-brand">
             Nozze Digitali
-          </a>
+          </Link>
+
+          <nav className="header-nav" aria-label="Navigazione principale">
+            <Link to="/sito-matrimonio">Sito matrimonio</Link>
+            <Link to="/partecipazioni-digitali">Partecipazioni digitali</Link>
+          </nav>
 
           <a
             href={whatsappLink}
