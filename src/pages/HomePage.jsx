@@ -273,6 +273,92 @@ const HomePage = () => {
           </Reveal>
         </div>
       </section>
+
+      <section className="home-faq-section">
+        <div className="container">
+          <Reveal>
+            <div className="home-faq-heading">
+              <p className="home-section-eyebrow">DOMANDE FREQUENTI</p>
+
+              <h2>Domande sul sito web per il vostro matrimonio</h2>
+
+              <p>
+                Tutto quello che può essere utile sapere prima di creare il
+                vostro spazio digitale con Nozze Digitali.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="home-faq-list">
+            <details className="home-faq-item">
+              <summary>Che cos&apos;è un sito web per matrimonio?</summary>
+
+              <p>
+                È uno spazio digitale personalizzato dedicato al vostro
+                matrimonio, dove raccogliere partecipazioni, conferme RSVP,
+                informazioni utili, tavoli, esigenze alimentari, foto e
+                aggiornamenti per gli invitati.
+              </p>
+            </details>
+
+            <details className="home-faq-item">
+              <summary>Gli invitati devono registrarsi?</summary>
+
+              <p>
+                L&apos;esperienza può essere organizzata in modo semplice, così
+                che gli invitati possano accedere alle informazioni e alle
+                funzioni previste senza complicazioni.
+              </p>
+            </details>
+
+            <details className="home-faq-item">
+              <summary>
+                È possibile gestire le conferme di partecipazione online?
+              </summary>
+
+              <p>
+                Sì. Gli invitati possono confermare la propria partecipazione
+                direttamente dal sito e gli sposi possono gestire le risposte in
+                modo ordinato.
+              </p>
+            </details>
+
+            <details className="home-faq-item">
+              <summary>Il sito può essere personalizzato?</summary>
+
+              <p>
+                Sì. Colori, contenuti e stile possono essere adattati per creare
+                uno spazio coerente con l&apos;identità e l&apos;atmosfera del
+                vostro matrimonio.
+              </p>
+            </details>
+
+            <details className="home-faq-item">
+              <summary>
+                Le partecipazioni digitali sostituiscono quelle cartacee?
+              </summary>
+
+              <p>
+                Possono essere utilizzate da sole oppure affiancate alle
+                partecipazioni tradizionali, in base alle vostre preferenze e al
+                modo in cui desiderate comunicare con gli invitati.
+              </p>
+            </details>
+
+            <details className="home-faq-item">
+              <summary>
+                Posso raccogliere allergie e intolleranze degli invitati?
+              </summary>
+
+              <p>
+                Sì. Nozze Digitali permette di raccogliere informazioni relative
+                ad allergie, intolleranze ed esigenze alimentari, mantenendole
+                organizzate insieme agli altri dati degli invitati.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
