@@ -1,0 +1,17 @@
+# Nozze Digitali
+
+Nozze Digitali è un servizio dedicato alla creazione di siti web personalizzati per matrimoni.
+
+Il sito permette alle coppie di gestire in un unico spazio digitale partecipazioni, conferme RSVP, invitati, tavoli, esigenze alimentari, fotografie, aggiornamenti e informazioni utili sul matrimonio.
+
+## Pagine principali
+
+- [Home](https://nozzedigitali.site/)
+- [Sito matrimonio](https://nozzedigitali.site/sito-matrimonio)
+- [Partecipazioni digitali](https://nozzedigitali.site/partecipazioni-digitali)
+- [RSVP matrimonio](https://nozzedigitali.site/rsvp-matrimonio)
+- [Gestione invitati matrimonio](https://nozzedigitali.site/gestione-invitati-matrimonio)
+
+## Informazioni
+
+I contenuti pubblici del sito descrivono i servizi offerti da Nozze Digitali e il funzionamento della piattaforma per le coppie e i loro invitati.
