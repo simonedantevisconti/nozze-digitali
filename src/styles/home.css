@@ -586,7 +586,7 @@
   margin-top: 2rem;
   padding: 0.9rem 1.5rem;
   border-radius: 999px;
-  background: #be7e82;
+  background: var(--color-primary-accessible);
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -597,8 +597,8 @@
 
 .home-intro-link:hover {
   color: #fff;
+  background: #8f5559;
   transform: translateY(-2px);
-  opacity: 0.92;
 }
 
 .home-intro-links {

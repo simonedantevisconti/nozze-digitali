@@ -57,7 +57,7 @@
 
   border-radius: 999px;
 
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-accessible);
   color: #ffffff;
 
   font-weight: 700;
@@ -68,7 +68,7 @@
 }
 
 .header-cta:hover {
-  background-color: var(--color-primary-dark);
+  background-color: #8f5559;
   color: #ffffff;
 
   transform: translateY(-2px);
@@ -120,7 +120,7 @@
 
     font-size: 0.85rem;
   }
-  
+
   .header-nav {
     display: none;
   }
