@@ -146,6 +146,87 @@ const GestioneInvitatiMatrimonioPage = () => {
           </div>
         </section>
 
+        <section className="guests-organization">
+          <div className="container guests-organization-content">
+            <p className="guests-eyebrow">ORGANIZZAZIONE INVITATI</p>
+
+            <h2>Come organizzare la lista invitati del matrimonio</h2>
+
+            <p className="guests-organization-intro">
+              Una lista invitati ben organizzata vi aiuta a tenere sotto
+              controllo presenze, nuclei familiari, esigenze alimentari e
+              disposizione dei tavoli durante tutte le fasi
+              dell&apos;organizzazione.
+            </p>
+
+            <div className="guests-organization-grid">
+              <article>
+                <h3>Dividete gli invitati per nucleo</h3>
+
+                <p>
+                  Raggruppare le persone associate allo stesso invito permette
+                  di gestire con maggiore chiarezza conferme e comunicazioni.
+                </p>
+              </article>
+
+              <article>
+                <h3>Registrate le conferme individuali</h3>
+
+                <p>
+                  Anche all&apos;interno dello stesso nucleo, ogni persona può
+                  avere una risposta diversa. Tenere separate le conferme evita
+                  errori nel conteggio finale.
+                </p>
+              </article>
+
+              <article>
+                <h3>Raccogliete esigenze alimentari</h3>
+
+                <p>
+                  Allergie, intolleranze e necessità particolari possono essere
+                  associate direttamente alla persona interessata.
+                </p>
+              </article>
+
+              <article>
+                <h3>Preparate l&apos;organizzazione dei tavoli</h3>
+
+                <p>
+                  Quando le conferme sono aggiornate, diventa più semplice
+                  costruire la disposizione dei tavoli partendo da dati
+                  ordinati.
+                </p>
+              </article>
+
+              <article>
+                <h3>Mantenete le informazioni aggiornate</h3>
+
+                <p>
+                  Modifiche e nuove conferme possono essere registrate nello
+                  stesso spazio senza dover aggiornare più fogli o
+                  conversazioni.
+                </p>
+              </article>
+
+              <article>
+                <h3>Tenete una visione completa</h3>
+
+                <p>
+                  Avere tutte le informazioni raccolte insieme vi permette di
+                  capire rapidamente chi parteciperà e quali aspetti richiedono
+                  attenzione.
+                </p>
+              </article>
+            </div>
+
+            <div className="guests-organization-link">
+              <a href="/rsvp-matrimonio">
+                Scopri come raccogliere le conferme RSVP online
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="guests-cta">
           <div className="container">
             <div className="guests-cta-box">

@@ -146,6 +146,65 @@ const RsvpMatrimonioPage = () => {
           </div>
         </section>
 
+        <section className="rsvp-info">
+          <div className="container rsvp-info-content">
+            <p className="rsvp-eyebrow">COSA RACCOGLIERE</p>
+
+            <h2>Quali informazioni chiedere con un RSVP matrimonio online?</h2>
+
+            <p className="rsvp-info-intro">
+              Un RSVP online può raccogliere in modo ordinato tutte le
+              informazioni necessarie per organizzare il matrimonio, evitando di
+              doverle recuperare successivamente attraverso messaggi e
+              telefonate.
+            </p>
+
+            <div className="rsvp-info-grid">
+              <article>
+                <h3>Conferma della presenza</h3>
+
+                <p>
+                  Ogni invitato può indicare se parteciperà oppure no al
+                  matrimonio.
+                </p>
+              </article>
+
+              <article>
+                <h3>Persone partecipanti</h3>
+
+                <p>
+                  Quando l&apos;invito comprende più persone, potete sapere
+                  esattamente chi sarà presente.
+                </p>
+              </article>
+
+              <article>
+                <h3>Allergie e intolleranze</h3>
+
+                <p>
+                  Gli invitati possono comunicare eventuali allergie,
+                  intolleranze o esigenze alimentari.
+                </p>
+              </article>
+
+              <article>
+                <h3>Esigenze particolari</h3>
+
+                <p>
+                  Potete raccogliere altre informazioni utili per organizzare al
+                  meglio l&apos;accoglienza degli ospiti.
+                </p>
+              </article>
+            </div>
+
+            <div className="rsvp-info-link">
+              <a href="/gestione-invitati-matrimonio">
+                Scopri come organizzare tutte le informazioni degli invitati
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="rsvp-related">
           <div className="container rsvp-related-content">
             <h2>RSVP e partecipazioni digitali lavorano insieme</h2>
