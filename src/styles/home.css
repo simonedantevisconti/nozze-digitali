@@ -385,6 +385,64 @@
   border: 0;
 }
 
+.home-video-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  border: 0;
+
+  background:
+    linear-gradient(rgba(255, 250, 247, 0.2), rgba(255, 250, 247, 0.2)),
+    var(--color-secondary);
+
+  color: var(--color-text);
+
+  cursor: pointer;
+}
+
+.home-video-play {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  font-size: 1.6rem;
+
+  box-shadow: 0 12px 30px rgba(47, 41, 38, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.home-video-placeholder:hover .home-video-play {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.06);
+}
+
+.home-video-placeholder-text {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.home-video-placeholder:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: -3px;
+}
+
 /* =========================
    VANTAGGI SECTION
 ========================= */

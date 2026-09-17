@@ -1,8 +1,10 @@
+import { useState } from "react";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 
 const HomePage = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
   return (
     <>
       <section className="home-hero">
@@ -136,12 +138,29 @@ const HomePage = () => {
           <Reveal delay={150}>
             <div className="home-video-wrapper">
               <div className="ratio ratio-16x9">
-                <iframe
-                  src="https://www.youtube.com/embed/xpvonnf1ALY"
-                  title="Scopri Nozze Digitali"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                {videoLoaded ? (
+                  <iframe
+                    src="https://www.youtube-nocookie.com/embed/xpvonnf1ALY?autoplay=1"
+                    title="Scopri Nozze Digitali"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <button
+                    type="button"
+                    className="home-video-placeholder"
+                    onClick={() => setVideoLoaded(true)}
+                    aria-label="Riproduci il video di presentazione di Nozze Digitali"
+                  >
+                    <span className="home-video-play" aria-hidden="true">
+                      ▶
+                    </span>
+
+                    <span className="home-video-placeholder-text">
+                      Guarda come funziona Nozze Digitali
+                    </span>
+                  </button>
+                )}
               </div>
             </div>
           </Reveal>
