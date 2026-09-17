@@ -542,6 +542,20 @@
   line-height: 1.7;
 }
 
+.benefit-card-link {
+  display: inline-block;
+  margin-top: 1rem;
+
+  color: var(--color-primary);
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.benefit-card-link:hover {
+  text-decoration: underline;
+}
+
 .home-intro-section {
   padding: 5rem 0;
 }

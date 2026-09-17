@@ -195,6 +195,10 @@ const HomePage = () => {
                     Gli invitati possono confermare la propria presenza
                     direttamente online, in modo semplice e veloce.
                   </p>
+
+                  <Link to="/rsvp-matrimonio" className="benefit-card-link">
+                    Scopri l&apos;RSVP matrimonio
+                  </Link>
                 </article>
               </div>
 
@@ -234,6 +238,13 @@ const HomePage = () => {
                     Raccogliete allergie, intolleranze e preferenze alimentari
                     senza perdere informazioni importanti.
                   </p>
+
+                  <Link
+                    to="/gestione-invitati-matrimonio"
+                    className="benefit-card-link"
+                  >
+                    Scopri la gestione invitati
+                  </Link>
                 </article>
               </div>
 
