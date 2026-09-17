@@ -583,21 +583,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 0;
   padding: 0.9rem 1.5rem;
   border-radius: 999px;
+
   background: var(--color-primary-accessible);
   color: #fff;
+
   font-weight: 700;
   text-decoration: none;
+
   transition:
     transform 0.2s ease,
-    opacity 0.2s ease;
+    background 0.2s ease;
 }
 
 .home-intro-link:hover {
   color: #fff;
   background: #8f5559;
+
   transform: translateY(-2px);
 }
 
