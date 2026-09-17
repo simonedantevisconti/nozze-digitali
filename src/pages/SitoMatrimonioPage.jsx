@@ -129,6 +129,73 @@ const SitoMatrimonioPage = () => {
           </div>
         </section>
 
+        <section className="wedding-site-details">
+          <div className="container wedding-site-content">
+            <p className="wedding-site-eyebrow">COSA PUÒ CONTENERE</p>
+
+            <h2>Cosa inserire in un sito web per matrimonio?</h2>
+
+            <p>
+              Un sito per matrimonio può diventare il punto di riferimento per
+              gli invitati prima e durante il grande giorno. Invece di
+              distribuire le informazioni tra messaggi, partecipazioni e
+              conversazioni diverse, potete raccogliere tutto in uno spazio
+              sempre disponibile.
+            </p>
+
+            <div className="wedding-site-details-grid">
+              <article>
+                <h3>Data, orari e location</h3>
+                <p>
+                  Cerimonia, ricevimento, indirizzi e indicazioni possono essere
+                  consultati facilmente dagli invitati in qualsiasi momento.
+                </p>
+              </article>
+
+              <article>
+                <h3>Conferma di partecipazione</h3>
+                <p>
+                  Gli invitati possono comunicare la propria presenza attraverso
+                  l&apos;RSVP online, evitando risposte disperse tra chat e
+                  telefonate.
+                </p>
+              </article>
+
+              <article>
+                <h3>Allergie ed esigenze alimentari</h3>
+                <p>
+                  Potete raccogliere allergie, intolleranze e necessità
+                  particolari insieme alle informazioni degli invitati.
+                </p>
+              </article>
+
+              <article>
+                <h3>Tavoli del matrimonio</h3>
+                <p>
+                  Quando la disposizione è pronta, gli invitati possono trovare
+                  in modo semplice le informazioni relative al proprio tavolo.
+                </p>
+              </article>
+
+              <article>
+                <h3>Aggiornamenti</h3>
+                <p>
+                  Eventuali cambi di programma o comunicazioni importanti
+                  possono essere pubblicati nello stesso spazio digitale.
+                </p>
+              </article>
+
+              <article>
+                <h3>Foto condivise dagli invitati</h3>
+                <p>
+                  Il sito può diventare anche uno spazio in cui raccogliere i
+                  ricordi e le fotografie condivise durante il matrimonio.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section className="wedding-site-cta">
           <div className="container">
             <div className="wedding-site-cta-box">

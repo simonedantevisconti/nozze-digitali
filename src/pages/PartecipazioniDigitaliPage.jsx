@@ -155,6 +155,60 @@ const PartecipazioniDigitaliPage = () => {
           </div>
         </section>
 
+        <section className="digital-invitations-comparison">
+          <div className="container digital-invitations-content">
+            <p className="digital-invitations-eyebrow">DIGITALE O CARTACEO?</p>
+
+            <h2>Partecipazioni digitali e cartacee possono convivere</h2>
+
+            <p className="digital-invitations-comparison-intro">
+              La partecipazione digitale non deve necessariamente sostituire
+              quella cartacea. Le due soluzioni possono essere utilizzate
+              insieme, scegliendo il formato più adatto per ogni invitato e
+              mantenendo tutte le informazioni del matrimonio sempre accessibili
+              online.
+            </p>
+
+            <div className="digital-invitations-comparison-grid">
+              <article>
+                <h3>Partecipazione digitale</h3>
+
+                <p>
+                  È semplice da condividere, può contenere informazioni
+                  aggiornate e permette agli invitati di accedere direttamente a
+                  RSVP, location, orari e altri dettagli del matrimonio.
+                </p>
+              </article>
+
+              <article>
+                <h3>Partecipazione cartacea</h3>
+
+                <p>
+                  Resta una scelta tradizionale ed elegante, adatta alle coppie
+                  che desiderano consegnare un invito fisico ai propri ospiti.
+                </p>
+              </article>
+
+              <article>
+                <h3>Una soluzione combinata</h3>
+
+                <p>
+                  Potete utilizzare la partecipazione cartacea per l&apos;invito
+                  e affiancarla al sito del matrimonio, dove gli invitati
+                  trovano tutte le informazioni aggiornate e possono confermare
+                  la presenza online.
+                </p>
+              </article>
+            </div>
+
+            <div className="digital-invitations-comparison-link">
+              <a href="/sito-matrimonio">
+                Scopri cosa può contenere il sito del matrimonio
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="digital-invitations-cta">
           <div className="container">
             <div className="digital-invitations-cta-box">
