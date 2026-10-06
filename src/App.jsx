@@ -6,6 +6,7 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import HomePage from "./pages/HomePage";
 import PartecipazioniDigitaliPage from "./pages/PartecipazioniDigitaliPage";
 import SitoMatrimonioPage from "./pages/SitoMatrimonioPage";
+import ServiziPrezziPage from "./pages/ServiziPrezziPage";
 import RsvpMatrimonioPage from "./pages/RsvpMatrimonioPage";
 import GestioneInvitatiMatrimonioPage from "./pages/GestioneInvitatiMatrimonioPage";
 
@@ -24,6 +25,8 @@ const App = () => {
           />
 
           <Route path="/sito-matrimonio" element={<SitoMatrimonioPage />} />
+
+          <Route path="/servizi-prezzi" element={<ServiziPrezziPage />} />
 
           <Route path="/rsvp-matrimonio" element={<RsvpMatrimonioPage />} />
 
