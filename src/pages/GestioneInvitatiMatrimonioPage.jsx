@@ -1,253 +1,333 @@
+import { Link } from "react-router-dom";
 import SeoPage from "../components/SeoPage";
+import Reveal from "../components/Reveal";
+
 import "../styles/gestione-invitati-matrimonio.css";
 
 const GestioneInvitatiMatrimonioPage = () => {
   const whatsappLink =
-    "https://wa.me/393451287102?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20su%20Nozze%20Digitali%20e%20richiedere%20un%20preventivo.";
+    "https://wa.me/393451287102?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sulla%20gestione%20degli%20invitati%20con%20Nozze%20Digitali.";
 
   return (
     <>
       <SeoPage
         title="Gestione Invitati Matrimonio | Nozze Digitali"
-        description="Gestisci invitati, conferme, esigenze alimentari, tavoli e informazioni del matrimonio in un unico spazio digitale organizzato."
+        description="Gestisci la lista invitati del matrimonio, conferme, assenti e risposte in attesa in un'unica area riservata, con esportazione PDF."
         canonical="https://nozzedigitali.site/gestione-invitati-matrimonio"
         breadcrumbName="Gestione invitati matrimonio"
       />
 
       <main className="guests-page">
-        <nav className="guests-breadcrumb" aria-label="Breadcrumb">
-          <div className="container">
-            <a href="/">Home</a>
-            <span aria-hidden="true">/</span>
-            <span>Gestione invitati matrimonio</span>
-          </div>
-        </nav>
-
         <section className="guests-hero">
           <div className="container">
-            <p className="guests-eyebrow">GESTIONE INVITATI MATRIMONIO</p>
+            <Reveal>
+              <div className="guests-hero-content">
+                <p className="guests-eyebrow">GESTIONE INVITATI</p>
 
-            <h1>
-              Tutti gli invitati del vostro matrimonio, organizzati in un unico
-              spazio
-            </h1>
+                <h1>La lista invitati sempre aggiornata</h1>
 
-            <p className="guests-intro">
-              Conferme, esigenze alimentari, tavoli e informazioni utili: Nozze
-              Digitali vi aiuta a mantenere tutto ordinato senza rincorrere
-              messaggi, fogli e conversazioni sparse.
-            </p>
+                <p className="guests-intro">
+                  Ogni conferma ricevuta attraverso le partecipazioni digitali
+                  aggiorna la situazione degli invitati, così sapete sempre chi
+                  sarà presente, chi non parteciperà e chi deve ancora
+                  rispondere.
+                </p>
+
+                <div className="guests-hero-actions">
+                  <a href="#area-riservata" className="btn btn-primary-custom">
+                    Scopri l'area riservata
+                  </a>
+
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-custom"
+                  >
+                    Richiedi informazioni
+                  </a>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </section>
 
-        <section className="guests-section">
-          <div className="container guests-content">
-            <h2>Più ordine durante tutta l&apos;organizzazione</h2>
+        <section className="guests-flow">
+          <div className="container">
+            <Reveal>
+              <div className="guests-heading">
+                <p className="guests-eyebrow">TUTTO COLLEGATO</p>
 
-            <p>
-              Gestire gli invitati significa raccogliere molte informazioni
-              diverse. Un unico spazio digitale permette di avere una visione
-              più chiara e aggiornata della situazione.
-            </p>
+                <h2>Dalla partecipazione alla lista finale</h2>
 
-            <div className="guests-grid">
-              <article className="guests-card">
-                <h3>Conferme di partecipazione</h3>
                 <p>
-                  Sapete chi parteciperà senza dover ricostruire le risposte da
-                  chat, telefonate ed email.
+                  Le risposte degli invitati non devono essere riportate
+                  manualmente: fanno parte dello stesso sistema.
                 </p>
+              </div>
+            </Reveal>
 
-                <a href="/rsvp-matrimonio" className="guests-card-link">
-                  Scopri l&apos;RSVP matrimonio
-                </a>
-              </article>
-
-              <article className="guests-card">
-                <h3>Esigenze alimentari</h3>
-                <p>
-                  Allergie, intolleranze e necessità particolari possono essere
-                  raccolte direttamente dagli invitati.
-                </p>
-              </article>
-
-              <article className="guests-card">
-                <h3>Gestione dei nuclei</h3>
-                <p>
-                  Organizzate in modo chiaro le persone associate allo stesso
-                  invito e le relative conferme.
-                </p>
-              </article>
-
-              <article className="guests-card">
-                <h3>Organizzazione dei tavoli</h3>
-                <p>
-                  Le informazioni raccolte aiutano a gestire con maggiore
-                  semplicità la disposizione degli invitati.
-                </p>
-              </article>
-
-              <article className="guests-card">
-                <h3>Informazioni centralizzate</h3>
-                <p>
-                  Tutto ciò che riguarda gli ospiti rimane nello stesso spazio,
-                  più facile da consultare e aggiornare.
-                </p>
-              </article>
-
-              <article className="guests-card">
-                <h3>Integrato nel sito matrimonio</h3>
-                <p>
-                  Gestione invitati, partecipazioni digitali e RSVP fanno parte
-                  dello stesso ecosistema.
-                </p>
-
-                <a href="/sito-matrimonio" className="guests-card-link">
-                  Scopri il sito matrimonio
-                </a>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section className="guests-how">
-          <div className="container guests-how-content">
-            <p className="guests-eyebrow">COME FUNZIONA</p>
-
-            <h2>Dalla lista invitati all&apos;organizzazione finale</h2>
-
-            <div className="guests-steps">
-              <article>
-                <span>01</span>
-                <h3>Organizzate gli invitati</h3>
-                <p>
-                  Ogni invito viene associato alle persone coinvolte nel
-                  matrimonio.
-                </p>
-              </article>
-
-              <article>
-                <span>02</span>
-                <h3>Raccogliete le risposte</h3>
-                <p>
-                  Conferme ed esigenze vengono comunicate direttamente online.
-                </p>
-              </article>
-
-              <article>
-                <span>03</span>
-                <h3>Avete tutto sotto controllo</h3>
-                <p>
-                  Le informazioni raccolte diventano più semplici da consultare
-                  e utilizzare durante l&apos;organizzazione.
-                </p>
-              </article>
+            <div className="guests-flow-grid">
+              {[
+                [
+                  "01",
+                  "Partecipazione",
+                  "Ogni invito viene associato all'invitato o al nucleo familiare.",
+                ],
+                [
+                  "02",
+                  "Codice personale",
+                  "L'invitato utilizza il proprio codice per accedere alla conferma.",
+                ],
+                [
+                  "03",
+                  "Risposta",
+                  "Comunica direttamente online se parteciperà oppure no.",
+                ],
+                [
+                  "04",
+                  "Lista aggiornata",
+                  "La risposta viene raccolta nella vostra area riservata.",
+                ],
+              ].map(([number, title, text]) => (
+                <Reveal key={number}>
+                  <article>
+                    <span>{number}</span>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </article>
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="guests-organization">
-          <div className="container guests-organization-content">
-            <p className="guests-eyebrow">ORGANIZZAZIONE INVITATI</p>
+        <section id="area-riservata" className="guests-admin">
+          <div className="container">
+            <Reveal>
+              <div className="guests-heading">
+                <p className="guests-eyebrow">AREA RISERVATA</p>
 
-            <h2>Come organizzare la lista invitati del matrimonio</h2>
-
-            <p className="guests-organization-intro">
-              Una lista invitati ben organizzata vi aiuta a tenere sotto
-              controllo presenze, nuclei familiari, esigenze alimentari e
-              disposizione dei tavoli durante tutte le fasi
-              dell&apos;organizzazione.
-            </p>
-
-            <div className="guests-organization-grid">
-              <article>
-                <h3>Dividete gli invitati per nucleo</h3>
+                <h2>Una fotografia chiara della situazione</h2>
 
                 <p>
-                  Raggruppare le persone associate allo stesso invito permette
-                  di gestire con maggiore chiarezza conferme e comunicazioni.
+                  Non dovete più ricostruire le presenze da WhatsApp, telefonate
+                  o fogli Excel.
                 </p>
-              </article>
+              </div>
+            </Reveal>
 
-              <article>
-                <h3>Registrate le conferme individuali</h3>
+            <Reveal delay={100}>
+              <div className="guests-admin-panel">
+                <div className="guests-admin-header">
+                  <div>
+                    <strong>Invitati</strong>
+                    <span>Situazione aggiornata</span>
+                  </div>
 
-                <p>
-                  Anche all&apos;interno dello stesso nucleo, ogni persona può
-                  avere una risposta diversa. Tenere separate le conferme evita
-                  errori nel conteggio finale.
-                </p>
-              </article>
+                  <span className="guests-admin-pdf">Scarica PDF</span>
+                </div>
 
-              <article>
-                <h3>Raccogliete esigenze alimentari</h3>
+                <div className="guests-admin-stats">
+                  <article>
+                    <strong>87</strong>
+                    <span>Confermati</span>
+                  </article>
 
-                <p>
-                  Allergie, intolleranze e necessità particolari possono essere
-                  associate direttamente alla persona interessata.
-                </p>
-              </article>
+                  <article>
+                    <strong>12</strong>
+                    <span>Non partecipano</span>
+                  </article>
 
-              <article>
-                <h3>Preparate l&apos;organizzazione dei tavoli</h3>
+                  <article>
+                    <strong>34</strong>
+                    <span>In attesa</span>
+                  </article>
+                </div>
 
-                <p>
-                  Quando le conferme sono aggiornate, diventa più semplice
-                  costruire la disposizione dei tavoli partendo da dati
-                  ordinati.
-                </p>
-              </article>
+                <div className="guests-admin-table">
+                  <div className="guests-admin-table-head">
+                    <span>Invitato</span>
+                    <span>Stato</span>
+                  </div>
 
-              <article>
-                <h3>Mantenete le informazioni aggiornate</h3>
+                  <div>
+                    <span>Giulia Bianchi</span>
+                    <strong>Confermato</strong>
+                  </div>
 
-                <p>
-                  Modifiche e nuove conferme possono essere registrate nello
-                  stesso spazio senza dover aggiornare più fogli o
-                  conversazioni.
-                </p>
-              </article>
+                  <div>
+                    <span>Marco Rossi</span>
+                    <strong>In attesa</strong>
+                  </div>
 
-              <article>
-                <h3>Tenete una visione completa</h3>
+                  <div>
+                    <span>Famiglia Verdi</span>
+                    <strong>Confermato</strong>
+                  </div>
 
-                <p>
-                  Avere tutte le informazioni raccolte insieme vi permette di
-                  capire rapidamente chi parteciperà e quali aspetti richiedono
-                  attenzione.
-                </p>
-              </article>
+                  <div>
+                    <span>Laura Colombo</span>
+                    <strong>Non partecipa</strong>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="guests-features">
+          <div className="container">
+            <Reveal>
+              <div className="guests-heading">
+                <p className="guests-eyebrow">COSA POTETE FARE</p>
+
+                <h2>Le informazioni essenziali sempre a portata di mano</h2>
+              </div>
+            </Reveal>
+
+            <div className="guests-features-grid">
+              {[
+                [
+                  "Controllare i confermati",
+                  "Sapete immediatamente chi sarà presente al matrimonio.",
+                ],
+                [
+                  "Controllare gli assenti",
+                  "Le risposte negative rimangono registrate insieme alle altre.",
+                ],
+                [
+                  "Vedere chi manca",
+                  "Individuate rapidamente chi deve ancora comunicare la propria scelta.",
+                ],
+                [
+                  "Scaricare la lista",
+                  "Potete esportare la situazione aggiornata in formato PDF.",
+                ],
+              ].map(([title, text]) => (
+                <Reveal key={title}>
+                  <article>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </article>
+                </Reveal>
+              ))}
             </div>
+          </div>
+        </section>
 
-            <div className="guests-organization-link">
-              <a href="/rsvp-matrimonio">
-                Scopri come raccogliere le conferme RSVP online
-              </a>
+        <section className="guests-extras">
+          <div className="container">
+            <Reveal>
+              <div className="guests-heading">
+                <p className="guests-eyebrow">SERVIZI AGGIUNTIVI</p>
+
+                <h2>Dalla lista invitati potete gestire anche altri aspetti</h2>
+
+                <p>
+                  Se vi servono più informazioni dagli invitati potete
+                  aggiungere funzioni specifiche al sito.
+                </p>
+              </div>
+            </Reveal>
+
+            <div className="guests-extras-grid">
+              <Reveal>
+                <article>
+                  <div>
+                    <h3>Indicazioni alimentari</h3>
+                    <strong>+50 €</strong>
+                  </div>
+
+                  <p>
+                    Gli invitati possono compilare un questionario per
+                    comunicare allergie, intolleranze o diete particolari.
+                  </p>
+                </article>
+              </Reveal>
+
+              <Reveal delay={100}>
+                <article>
+                  <div>
+                    <h3>Tavoli</h3>
+                    <strong>+50 €</strong>
+                  </div>
+
+                  <p>
+                    Una volta completata la disposizione, gli invitati possono
+                    cercare il proprio nome e scoprire il tavolo assegnato.
+                  </p>
+                </article>
+              </Reveal>
             </div>
+          </div>
+        </section>
+
+        <section className="guests-package">
+          <div className="container">
+            <Reveal>
+              <div className="guests-package-box">
+                <div>
+                  <p className="guests-eyebrow">PACCHETTO BASE</p>
+
+                  <h2>La gestione della lista è già compresa nei 300 €</h2>
+
+                  <p>
+                    Conferme, situazione aggiornata degli invitati e
+                    esportazione PDF fanno parte del servizio base.
+                  </p>
+                </div>
+
+                <strong>300 €</strong>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <section className="guests-related">
+          <div className="container">
+            <Reveal>
+              <div className="guests-related-box">
+                <div>
+                  <p className="guests-eyebrow">DA DOVE ARRIVANO I DATI?</p>
+
+                  <h2>Tutto parte dalle vostre partecipazioni digitali</h2>
+                </div>
+
+                <Link
+                  to="/partecipazioni-digitali"
+                  className="btn btn-outline-custom"
+                >
+                  Scopri le partecipazioni
+                </Link>
+              </div>
+            </Reveal>
           </div>
         </section>
 
         <section className="guests-cta">
           <div className="container">
-            <div className="guests-cta-box">
-              <p className="guests-eyebrow">INVITATI SENZA CONFUSIONE</p>
+            <Reveal>
+              <div className="guests-cta-box">
+                <p className="guests-eyebrow">INVITATI SENZA CONFUSIONE</p>
 
-              <h2>Volete semplificare la gestione del vostro matrimonio?</h2>
+                <h2>Organizzate le conferme in un unico posto</h2>
 
-              <p>
-                Raccontateci come state organizzando il vostro giorno e
-                scopriamo insieme come Nozze Digitali può aiutarvi.
-              </p>
+                <p>
+                  Le partecipazioni digitali raccolgono le risposte, mentre voi
+                  avete sempre una lista ordinata e aggiornata.
+                </p>
 
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="guests-cta-button"
-              >
-                Richiedi preventivo
-              </a>
-            </div>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="guests-cta-button"
+                >
+                  Scrivici su WhatsApp
+                </a>
+              </div>
+            </Reveal>
           </div>
         </section>
       </main>
