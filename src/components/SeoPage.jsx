@@ -3,18 +3,18 @@ import { useEffect } from "react";
 const SeoPage = ({ title, description, canonical, breadcrumbName }) => {
   useEffect(() => {
     const homepageTitle =
-      "Nozze Digitali | Sito Web per Matrimonio e Partecipazioni Digitali";
+      "Nozze Digitali | Partecipazioni Digitali e Sito per Matrimonio";
 
     const homepageDescription =
-      "Crea il sito web del tuo matrimonio con partecipazioni digitali, conferme RSVP, gestione invitati, tavoli, foto, esigenze alimentari e tutte le informazioni del grande giorno.";
+      "Partecipazioni digitali personalizzate, conferme online e sito dedicato al matrimonio con area riservata per gli sposi e gestione degli invitati.";
 
     const homepageCanonical = "https://nozzedigitali.site/";
 
     const homepageSocialTitle =
-      "Nozze Digitali | Il tuo matrimonio in un unico spazio digitale";
+      "Nozze Digitali | Partecipazioni e conferme online";
 
     const homepageSocialDescription =
-      "Partecipazioni digitali, conferme RSVP, invitati, tavoli, foto e informazioni del matrimonio in un unico sito personalizzato.";
+      "Create le vostre partecipazioni digitali, raccogliete le conferme e gestite gli invitati da un sito personalizzato per il matrimonio.";
 
     document.title = title;
 
@@ -82,7 +82,7 @@ const SeoPage = ({ title, description, canonical, breadcrumbName }) => {
     const twitterCard = setMeta(
       'meta[name="twitter:card"]',
       ["name", "twitter:card"],
-      "summary",
+      "summary_large_image",
     );
 
     const twitterTitle = setMeta(
@@ -159,7 +159,7 @@ const SeoPage = ({ title, description, canonical, breadcrumbName }) => {
 
       ogUrl?.setAttribute("content", homepageCanonical);
 
-      twitterCard?.setAttribute("content", "summary");
+      twitterCard?.setAttribute("content", "summary_large_image");
 
       twitterTitle?.setAttribute("content", homepageSocialTitle);
 
