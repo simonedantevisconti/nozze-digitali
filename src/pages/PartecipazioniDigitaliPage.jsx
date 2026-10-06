@@ -18,15 +18,6 @@ const PartecipazioniDigitaliPage = () => {
       />
 
       <main className="digital-invitations-page">
-        <nav className="digital-invitations-breadcrumb" aria-label="Breadcrumb">
-          <div className="container">
-            <Link to="/">Home</Link>
-
-            <span aria-hidden="true">/</span>
-
-            <span>Partecipazioni digitali</span>
-          </div>
-        </nav>
 
         <section className="digital-invitations-hero">
           <div className="container">

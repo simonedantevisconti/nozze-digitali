@@ -4,37 +4,6 @@
   background-color: var(--color-background);
 }
 
-/* BREADCRUMB */
-
-.digital-invitations-breadcrumb {
-  padding: 1rem 0;
-
-  border-bottom: 1px solid var(--color-border);
-
-  background-color: var(--color-surface);
-}
-
-.digital-invitations-breadcrumb .container {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-
-  color: var(--color-text-light);
-
-  font-size: 0.82rem;
-}
-
-.digital-invitations-breadcrumb a {
-  color: var(--color-primary-dark);
-
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.digital-invitations-breadcrumb a:hover {
-  text-decoration: underline;
-}
-
 /* COMMON */
 
 .digital-invitations-eyebrow {
