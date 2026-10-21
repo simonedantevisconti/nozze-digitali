@@ -19,11 +19,66 @@ const ServiziPrezziPage = () => {
   ];
 
   const extras = [
-    ["Aggiornamenti", "+50 €"],
-    ["Tavoli", "+50 €"],
-    ["Indicazioni alimentari", "+50 €"],
-    ["Rullino fotografico", "+100 €"],
-    ["Bomboniere", "+50 €"],
+    {
+      title: "Aggiornamenti",
+      price: "+50 €",
+      description:
+        "Una sezione dedicata alle comunicazioni del matrimonio, utile per pubblicare novità, promemoria o informazioni importanti per gli invitati.",
+      includes: [
+        "Pubblicazione di aggiornamenti e comunicazioni",
+        "Titolo, testo e immagine per ogni aggiornamento",
+        "Possibilità di aggiungere un pulsante con link",
+        "Gestione degli aggiornamenti dall'area admin",
+      ],
+    },
+    {
+      title: "Tavoli",
+      price: "+50 €",
+      description:
+        "Una funzione pensata per il giorno del matrimonio: ogni invitato può cercare il proprio nome e scoprire subito il tavolo assegnato.",
+      includes: [
+        "Ricerca dell'invitato per nome",
+        "Visualizzazione immediata del tavolo assegnato",
+        "Gestione dei tavoli dall'area admin",
+        "Aggiornamento semplice delle assegnazioni",
+      ],
+    },
+    {
+      title: "Indicazioni alimentari",
+      price: "+50 €",
+      description:
+        "Un questionario dedicato per raccogliere in modo ordinato allergie, intolleranze, esigenze alimentari e diete particolari.",
+      includes: [
+        "Modulo dedicato agli invitati",
+        "Raccolta di allergie e intolleranze",
+        "Gestione di diete e richieste particolari",
+        "Consultazione delle risposte dall'area admin",
+      ],
+    },
+    {
+      title: "Rullino fotografico",
+      price: "+100 €",
+      description:
+        "Uno spazio condiviso dove gli invitati possono caricare le fotografie scattate durante il matrimonio, creando un album digitale della giornata.",
+      includes: [
+        "Caricamento delle foto da parte degli invitati",
+        "Galleria dedicata alle immagini del matrimonio",
+        "Gestione e moderazione delle foto dall'area admin",
+        "Possibilità di scegliere quali immagini rendere visibili",
+      ],
+    },
+    {
+      title: "Bomboniere",
+      price: "+50 €",
+      description:
+        "Una sezione personalizzata per gestire comunicazioni o richieste legate alle bomboniere in base alle esigenze specifiche del matrimonio.",
+      includes: [
+        "Pagina dedicata e personalizzabile",
+        "Testi e indicazioni definiti insieme agli sposi",
+        "Eventuali scelte o richieste da parte degli invitati",
+        "Raccolta delle informazioni nell'area admin",
+      ],
+    },
   ];
 
   return (
@@ -93,13 +148,23 @@ const ServiziPrezziPage = () => {
             </Reveal>
 
             <div className="prices-extras-grid">
-              {extras.map(([title, price]) => (
-                <Reveal key={title}>
+              {extras.map((extra) => (
+                <Reveal key={extra.title}>
                   <article className="prices-extra-card">
                     <div className="prices-extra-top">
-                      <h3>{title}</h3>
-                      <strong>{price}</strong>
+                      <h3>{extra.title}</h3>
+                      <strong>{extra.price}</strong>
                     </div>
+
+                    <p className="prices-extra-description">
+                      {extra.description}
+                    </p>
+
+                    <ul className="prices-extra-list">
+                      {extra.includes.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
                   </article>
                 </Reveal>
               ))}
