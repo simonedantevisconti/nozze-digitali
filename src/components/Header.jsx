@@ -30,24 +30,9 @@ const Header = () => {
 
           <nav className="header-nav" aria-label="Navigazione principale">
             <Link to="/">Home</Link>
-
             <Link to="/partecipazioni-digitali">Partecipazioni</Link>
-
             <Link to="/sito-matrimonio">Sito matrimonio</Link>
-
-            <Link to="/servizi-prezzi">Servizi e prezzi</Link>
-
-            <Link to="/rsvp-matrimonio">Conferme invitati</Link>
-
-            <Link to="/gestione-invitati-matrimonio">Gestione invitati</Link>
-
-            <a
-              href="https://martaesimone.fun/#/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Esempio
-            </a>
+            <Link to="/servizi-prezzi">Prezzi</Link>
           </nav>
 
           <a
