@@ -1,32 +1,57 @@
+import { useEffect, useState } from "react";
+
 import SeoPage from "../components/SeoPage";
 import Reveal from "../components/Reveal";
 
 import "../styles/partecipazioni-digitali.css";
 
 const PartecipazioniDigitaliPage = () => {
+  const [activeExample, setActiveExample] = useState(0);
+  const [fullscreenExample, setFullscreenExample] = useState(null);
+
   const whatsappLink =
     "https://wa.me/393451287102?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sulle%20partecipazioni%20digitali%20di%20Nozze%20Digitali.";
 
   const examples = [
-    {
-      eyebrow: "ESSENZIALE",
-      names: "Giulia & Marco",
-      date: "18 settembre 2027",
-      code: "GM1809",
-    },
-    {
-      eyebrow: "ROMANTICA",
-      names: "Laura & Umberto",
-      date: "12 giugno 2027",
-      code: "LU1206",
-    },
-    {
-      eyebrow: "MODERNA",
-      names: "Marta & Simone",
-      date: "24 luglio 2027",
-      code: "MS2407",
-    },
+    "/partecipazione-1.png",
+    "/partecipazione-2.png",
+    "/partecipazione-3.png",
+    "/partecipazione-4.png",
+    "/partecipazione-5.png",
   ];
+
+  const showPreviousExample = () => {
+    setActiveExample((current) =>
+      current === 0 ? examples.length - 1 : current - 1,
+    );
+  };
+
+  const showNextExample = () => {
+    setActiveExample((current) =>
+      current === examples.length - 1 ? 0 : current + 1,
+    );
+  };
+
+  useEffect(() => {
+    if (!fullscreenExample) {
+      return undefined;
+    }
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setFullscreenExample(null);
+      }
+    };
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [fullscreenExample]);
 
   return (
     <>
@@ -153,20 +178,61 @@ const PartecipazioniDigitaliPage = () => {
               </div>
             </Reveal>
 
-            <div className="digital-invitations-personalization-grid">
-              {examples.map((example, index) => (
-                <Reveal key={example.names} delay={index * 80}>
-                  <article>
-                    <span>{example.eyebrow}</span>
-                    <h3>{example.names}</h3>
-                    <p>{example.date}</p>
-                    <p>
-                      Codice invito: <strong>{example.code}</strong>
-                    </p>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
+            <Reveal delay={100}>
+              <div className="digital-invitations-carousel">
+                <button
+                  type="button"
+                  className="digital-invitations-carousel-arrow digital-invitations-carousel-arrow-left"
+                  onClick={showPreviousExample}
+                  aria-label="Partecipazione precedente"
+                >
+                  ‹
+                </button>
+
+                <button
+                  type="button"
+                  className="digital-invitations-carousel-image-button"
+                  onClick={() => setFullscreenExample(examples[activeExample])}
+                  aria-label={`Apri a tutto schermo la partecipazione ${activeExample + 1}`}
+                >
+                  <img
+                    src={examples[activeExample]}
+                    alt={`Esempio di partecipazione digitale ${activeExample + 1}`}
+                    className="digital-invitations-carousel-image"
+                  />
+                </button>
+
+                <button
+                  type="button"
+                  className="digital-invitations-carousel-arrow digital-invitations-carousel-arrow-right"
+                  onClick={showNextExample}
+                  aria-label="Partecipazione successiva"
+                >
+                  ›
+                </button>
+              </div>
+
+              <div className="digital-invitations-carousel-dots">
+                {examples.map((example, index) => (
+                  <button
+                    type="button"
+                    key={example}
+                    className={`digital-invitations-carousel-dot${
+                      index === activeExample
+                        ? " digital-invitations-carousel-dot-active"
+                        : ""
+                    }`}
+                    onClick={() => setActiveExample(index)}
+                    aria-label={`Mostra partecipazione ${index + 1}`}
+                    aria-current={index === activeExample ? "true" : undefined}
+                  />
+                ))}
+              </div>
+
+              <p className="digital-invitations-carousel-hint">
+                Clicca sulla partecipazione per visualizzarla a tutto schermo.
+              </p>
+            </Reveal>
           </div>
         </section>
 
@@ -205,6 +271,32 @@ const PartecipazioniDigitaliPage = () => {
           </div>
         </section>
       </main>
+
+      {fullscreenExample && (
+        <div
+          className="digital-invitations-lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Anteprima partecipazione"
+          onClick={() => setFullscreenExample(null)}
+        >
+          <button
+            type="button"
+            className="digital-invitations-lightbox-close"
+            onClick={() => setFullscreenExample(null)}
+            aria-label="Chiudi anteprima"
+          >
+            ×
+          </button>
+
+          <img
+            src={fullscreenExample}
+            alt="Partecipazione digitale a tutto schermo"
+            className="digital-invitations-lightbox-image"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
     </>
   );
 };
