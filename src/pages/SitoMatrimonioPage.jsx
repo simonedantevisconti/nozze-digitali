@@ -207,34 +207,6 @@ const SitoMatrimonioPage = () => {
             </Reveal>
           </div>
         </section>
-
-        <section className="wedding-site-cta">
-          <div className="container">
-            <Reveal>
-              <div className="wedding-site-cta-box">
-                <p className="wedding-site-eyebrow">
-                  IL VOSTRO SPAZIO DIGITALE
-                </p>
-
-                <h2>Creiamo il sito del vostro matrimonio</h2>
-
-                <p>
-                  Partiamo dal vostro stile e dalle funzioni che vi servono per
-                  costruire uno spazio semplice, coordinato e personale.
-                </p>
-
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="wedding-site-cta-button"
-                >
-                  Scrivici su WhatsApp
-                </a>
-              </div>
-            </Reveal>
-          </div>
-        </section>
       </main>
     </>
   );
