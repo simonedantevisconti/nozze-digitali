@@ -170,97 +170,6 @@
   line-height: 1.65;
 }
 
-/* CONFIRMATION */
-
-.wedding-site-confirmation {
-  padding: 7rem 0;
-
-  background-color: rgba(189, 127, 130, 0.11);
-}
-
-.wedding-site-confirmation-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: center;
-  gap: 5rem;
-}
-
-.wedding-site-text-link {
-  display: inline-flex;
-
-  margin-top: 0.5rem;
-
-  color: var(--color-primary-dark);
-
-  font-weight: 700;
-}
-
-.wedding-site-text-link:hover {
-  text-decoration: underline;
-}
-
-.wedding-site-confirmation-demo {
-  max-width: 460px;
-
-  margin-left: auto;
-  padding: 2.2rem;
-
-  border: 1px solid var(--color-border);
-  border-radius: 24px;
-
-  background-color: var(--color-background);
-
-  box-shadow: 0 25px 65px rgba(47, 41, 38, 0.1);
-}
-
-.wedding-site-confirmation-demo > p {
-  margin-bottom: 1.5rem;
-
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.wedding-site-confirmation-label {
-  display: block;
-
-  margin-bottom: 0.5rem;
-
-  color: var(--color-text-light);
-
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-}
-
-.wedding-site-confirmation-code {
-  margin-bottom: 1rem;
-  padding: 0.9rem 1rem;
-
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-
-  background-color: var(--color-surface);
-
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.wedding-site-confirmation-button {
-  display: block;
-
-  padding: 0.85rem;
-
-  border-radius: 12px;
-
-  background-color: var(--color-primary-accessible);
-  color: #ffffff;
-
-  text-align: center;
-
-  font-weight: 700;
-}
-
 /* ADMIN */
 
 .wedding-site-admin {
@@ -541,45 +450,6 @@
   font-weight: 700;
 }
 
-/* EXAMPLE */
-
-.wedding-site-example {
-  padding: 7rem 0;
-
-  background-color: var(--color-background);
-}
-
-.wedding-site-example-box {
-  max-width: 1000px;
-
-  margin: 0 auto;
-  padding: 3rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-
-  border: 1px solid var(--color-border);
-  border-radius: 28px;
-
-  background-color: var(--color-surface);
-}
-
-.wedding-site-example-box h2 {
-  margin-bottom: 0.8rem;
-
-  font-size: clamp(2rem, 4vw, 3.2rem);
-}
-
-.wedding-site-example-box p:last-child {
-  margin: 0;
-
-  color: var(--color-text-light);
-
-  line-height: 1.7;
-}
-
 /* CTA */
 
 .wedding-site-cta {
@@ -654,15 +524,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .wedding-site-confirmation-grid,
   .wedding-site-personalization-grid {
     grid-template-columns: 1fr;
 
     gap: 3rem;
-  }
-
-  .wedding-site-confirmation-demo {
-    margin: 0 auto;
   }
 }
 
@@ -674,12 +539,10 @@
   }
 
   .wedding-site-information,
-  .wedding-site-confirmation,
   .wedding-site-admin,
   .wedding-site-package,
   .wedding-site-extras,
-  .wedding-site-personalization,
-  .wedding-site-example {
+  .wedding-site-personalization {
     padding: 5rem 0;
   }
 
@@ -719,13 +582,6 @@
 
   .wedding-site-package-grid {
     padding: 1rem 1.5rem 1.5rem;
-  }
-
-  .wedding-site-example-box {
-    padding: 2rem 1.5rem;
-
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .wedding-site-cta-box {
