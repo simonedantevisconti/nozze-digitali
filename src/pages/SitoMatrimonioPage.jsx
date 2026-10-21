@@ -119,39 +119,6 @@ const SitoMatrimonioPage = () => {
           </div>
         </section>
 
-        <section className="wedding-site-confirmation">
-          <div className="container">
-            <div className="wedding-site-confirmation-grid">
-              <Reveal>
-                <div>
-                  <p className="wedding-site-eyebrow">COME FUNZIONA</p>
-
-                  <h2>Un sito semplice per gli invitati, utile per voi</h2>
-
-                  <p>
-                    Con il codice ricevuto nella partecipazione, ogni invitato
-                    può confermare la presenza. Le risposte vengono raccolte
-                    automaticamente nella vostra area riservata.
-                  </p>
-                </div>
-              </Reveal>
-
-              <Reveal delay={120}>
-                <div className="wedding-site-confirmation-demo">
-                  <p>Conferma la tua partecipazione</p>
-                  <span className="wedding-site-confirmation-label">
-                    CODICE PERSONALE
-                  </span>
-                  <div className="wedding-site-confirmation-code">ND2407</div>
-                  <span className="wedding-site-confirmation-button">
-                    Continua
-                  </span>
-                </div>
-              </Reveal>
-            </div>
-          </div>
-        </section>
-
         <section className="wedding-site-extras">
           <div className="container">
             <Reveal>
@@ -179,32 +146,6 @@ const SitoMatrimonioPage = () => {
                 </Reveal>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="wedding-site-example">
-          <div className="container">
-            <Reveal>
-              <div className="wedding-site-example-box">
-                <div>
-                  <p className="wedding-site-eyebrow">ESEMPIO REALE</p>
-                  <h2>Marta &amp; Simone</h2>
-                  <p>
-                    Guardate un sito già realizzato per vedere come può
-                    presentarsi l'esperienza completa agli invitati.
-                  </p>
-                </div>
-
-                <a
-                  href="https://martaesimone.fun/#/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-custom"
-                >
-                  Visita il sito
-                </a>
-              </div>
-            </Reveal>
           </div>
         </section>
       </main>
