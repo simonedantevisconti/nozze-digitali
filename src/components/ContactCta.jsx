@@ -15,7 +15,7 @@ const ContactCta = () => {
             <h2>Vuoi saperne di più?</h2>
 
             <p className="contact-cta-text">
-              Raccontaci come immagini il tuo matrimonio e scopriamo insieme
+              Raccontateci come immaginate il vostro matrimonio e scopriamo insieme
               quali soluzioni possono essere più adatte alle vostre esigenze.
             </p>
 
