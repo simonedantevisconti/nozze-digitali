@@ -245,12 +245,19 @@ const PartecipazioniDigitaliPage = () => {
                     CODICE PERSONALE
                   </p>
 
-                  <h2>Le conferme vengono raccolte automaticamente</h2>
+                  <h2>Un codice univoco per ogni partecipazione</h2>
 
                   <p>
-                    Il codice collega la risposta alla persona corretta senza
-                    richiedere registrazioni. Voi potete vedere chi partecipa,
-                    chi non partecipa e chi deve ancora rispondere.
+                    Ogni partecipazione viene associata a un codice univoco.
+                    Quando l&apos;invitato lo inserisce nella sezione dedicata del
+                    sito, può comunicare la propria presenza al matrimonio.
+                  </p>
+
+                  <p>
+                    La risposta viene collegata automaticamente a quella
+                    partecipazione e compare nell&apos;area riservata agli sposi,
+                    dove potete tenere sotto controllo chi ha confermato, chi non
+                    parteciperà e chi deve ancora rispondere.
                   </p>
                 </div>
               </Reveal>
