@@ -238,41 +238,80 @@ const PartecipazioniDigitaliPage = () => {
 
         <section className="digital-invitations-code-section">
           <div className="container">
-            <div className="digital-invitations-code-grid">
+            <Reveal>
+              <div className="digital-invitations-heading digital-invitations-code-heading">
+                <p className="digital-invitations-eyebrow">CODICE PERSONALE</p>
+
+                <h2>Un codice univoco collega ogni invito alla sua risposta</h2>
+
+                <p>
+                  Ogni partecipazione viene associata a un codice personale.
+                  L&apos;invitato lo utilizza sul sito e la risposta viene
+                  registrata automaticamente nell&apos;area riservata agli sposi.
+                </p>
+              </div>
+            </Reveal>
+
+            <div className="digital-invitations-code-flow">
               <Reveal>
-                <div className="digital-invitations-code-content">
-                  <p className="digital-invitations-eyebrow">
-                    CODICE PERSONALE
-                  </p>
+                <article className="digital-invitations-code-step">
+                  <div className="digital-invitations-code-step-copy">
+                    <span className="digital-invitations-code-step-number">
+                      01
+                    </span>
 
-                  <h2>Un codice univoco per ogni partecipazione</h2>
+                    <p className="digital-invitations-code-step-eyebrow">
+                      PER GLI INVITATI
+                    </p>
 
-                  <p>
-                    Ogni partecipazione viene associata a un codice univoco.
-                    Quando l&apos;invitato lo inserisce nella sezione dedicata del
-                    sito, può comunicare la propria presenza al matrimonio.
-                  </p>
+                    <h3>Inseriscono il codice ricevuto</h3>
 
-                  <p>
-                    La risposta viene collegata automaticamente a quella
-                    partecipazione e compare nell&apos;area riservata agli sposi,
-                    dove potete tenere sotto controllo chi ha confermato, chi non
-                    parteciperà e chi deve ancora rispondere.
-                  </p>
-                </div>
+                    <p>
+                      Nella partecipazione ogni invitato trova il proprio codice
+                      univoco. Basta inserirlo nella sezione dedicata del sito
+                      per accedere alla conferma e comunicare se parteciperà al
+                      matrimonio.
+                    </p>
+                  </div>
+
+                  <div className="digital-invitations-code-step-visual">
+                    <img
+                      src="/inserisci-codice.png"
+                      alt="Schermata in cui l'invitato inserisce il codice personale"
+                    />
+                  </div>
+                </article>
               </Reveal>
 
               <Reveal delay={120}>
-                <div className="digital-invitations-code-mockup">
-                  <p>Conferma la tua partecipazione</p>
-                  <span className="digital-invitations-code-label">
-                    CODICE PERSONALE
-                  </span>
-                  <div className="digital-invitations-code-input">ND2407</div>
-                  <span className="digital-invitations-code-button">
-                    Continua
-                  </span>
-                </div>
+                <article className="digital-invitations-code-step digital-invitations-code-step-reverse">
+                  <div className="digital-invitations-code-step-copy">
+                    <span className="digital-invitations-code-step-number">
+                      02
+                    </span>
+
+                    <p className="digital-invitations-code-step-eyebrow">
+                      PER GLI SPOSI
+                    </p>
+
+                    <h3>Le conferme arrivano nell&apos;area riservata</h3>
+
+                    <p>
+                      La risposta viene associata automaticamente alla
+                      partecipazione corretta. Dalla sezione admin gli sposi
+                      possono controllare in qualsiasi momento chi ha
+                      confermato, chi non parteciperà e chi deve ancora
+                      rispondere.
+                    </p>
+                  </div>
+
+                  <div className="digital-invitations-code-step-visual">
+                    <img
+                      src="/admin-sposi.png"
+                      alt="Area admin degli sposi con il monitoraggio delle conferme"
+                    />
+                  </div>
+                </article>
               </Reveal>
             </div>
           </div>
