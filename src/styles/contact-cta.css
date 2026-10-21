@@ -1,0 +1,112 @@
+/* CONTACT CTA */
+
+.contact-cta {
+  padding: 7rem 0;
+
+  background-color: var(--color-background);
+}
+
+.contact-cta-box {
+  position: relative;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+  padding: 4rem 2rem;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+
+  background-color: rgba(189, 127, 130, 0.1);
+
+  text-align: center;
+}
+
+.contact-cta-box::before {
+  content: "";
+
+  position: absolute;
+  top: -140px;
+  right: -100px;
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-secondary);
+
+  opacity: 0.14;
+}
+
+.contact-cta-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-cta-eyebrow {
+  margin-bottom: 1rem;
+
+  color: var(--color-primary);
+
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.contact-cta-box h2 {
+  margin-bottom: 1.25rem;
+
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1.12;
+}
+
+.contact-cta-text {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: var(--color-text-light);
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.contact-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 767.98px) {
+  .contact-cta {
+    padding: 5rem 0;
+  }
+
+  .contact-cta-box {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact-cta-text {
+    font-size: 1rem;
+  }
+
+  .contact-cta-actions {
+    max-width: 320px;
+
+    margin: 2rem auto 0;
+
+    flex-direction: column;
+  }
+
+  .contact-cta-actions .btn {
+    width: 100%;
+  }
+}
