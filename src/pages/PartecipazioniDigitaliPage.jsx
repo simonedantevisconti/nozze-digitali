@@ -204,35 +204,6 @@ const PartecipazioniDigitaliPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="digital-invitations-cta">
-          <div className="container">
-            <Reveal>
-              <div className="digital-invitations-cta-box">
-                <p className="digital-invitations-eyebrow">
-                  LE VOSTRE PARTECIPAZIONI
-                </p>
-
-                <h2>Creiamo un invito davvero vostro</h2>
-
-                <p>
-                  Raccontateci lo stile del matrimonio e prepariamo una
-                  partecipazione digitale coordinata, elegante e semplice da
-                  utilizzare.
-                </p>
-
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="digital-invitations-cta-button"
-                >
-                  Scrivici su WhatsApp
-                </a>
-              </div>
-            </Reveal>
-          </div>
-        </section>
       </main>
     </>
   );
