@@ -7,8 +7,6 @@ import HomePage from "./pages/HomePage";
 import PartecipazioniDigitaliPage from "./pages/PartecipazioniDigitaliPage";
 import SitoMatrimonioPage from "./pages/SitoMatrimonioPage";
 import ServiziPrezziPage from "./pages/ServiziPrezziPage";
-import RsvpMatrimonioPage from "./pages/RsvpMatrimonioPage";
-import GestioneInvitatiMatrimonioPage from "./pages/GestioneInvitatiMatrimonioPage";
 
 const App = () => {
   return (
@@ -18,22 +16,12 @@ const App = () => {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePage />} />
-
           <Route
             path="/partecipazioni-digitali"
             element={<PartecipazioniDigitaliPage />}
           />
-
           <Route path="/sito-matrimonio" element={<SitoMatrimonioPage />} />
-
           <Route path="/servizi-prezzi" element={<ServiziPrezziPage />} />
-
-          <Route path="/rsvp-matrimonio" element={<RsvpMatrimonioPage />} />
-
-          <Route
-            path="/gestione-invitati-matrimonio"
-            element={<GestioneInvitatiMatrimonioPage />}
-          />
         </Route>
       </Routes>
     </>
