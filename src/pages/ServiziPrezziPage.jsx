@@ -4,8 +4,6 @@ import Reveal from "../components/Reveal";
 import "../styles/servizi-prezzi.css";
 
 const ServiziPrezziPage = () => {
-  const whatsappLink =
-    "https://wa.me/393451287102?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sui%20servizi%20e%20prezzi%20di%20Nozze%20Digitali.";
 
   const baseServices = [
     "Partecipazioni digitali personalizzate",
