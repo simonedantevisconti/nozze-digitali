@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SeoPage from "../components/SeoPage";
 import Reveal from "../components/Reveal";
 
@@ -8,17 +7,37 @@ const PartecipazioniDigitaliPage = () => {
   const whatsappLink =
     "https://wa.me/393451287102?text=Ciao%2C%20vorrei%20ricevere%20informazioni%20sulle%20partecipazioni%20digitali%20di%20Nozze%20Digitali.";
 
+  const examples = [
+    {
+      eyebrow: "ESSENZIALE",
+      names: "Giulia & Marco",
+      date: "18 settembre 2027",
+      code: "GM1809",
+    },
+    {
+      eyebrow: "ROMANTICA",
+      names: "Laura & Umberto",
+      date: "12 giugno 2027",
+      code: "LU1206",
+    },
+    {
+      eyebrow: "MODERNA",
+      names: "Marta & Simone",
+      date: "24 luglio 2027",
+      code: "MS2407",
+    },
+  ];
+
   return (
     <>
       <SeoPage
         title="Partecipazioni Digitali per Matrimonio | Nozze Digitali"
-        description="Partecipazioni digitali personalizzate per matrimonio con codice univoco, conferma di partecipazione online, sito dedicato e area riservata per gli sposi."
+        description="Partecipazioni digitali personalizzate per matrimonio con codice univoco e conferma di partecipazione online."
         canonical="https://nozzedigitali.site/partecipazioni-digitali"
         breadcrumbName="Partecipazioni digitali"
       />
 
       <main className="digital-invitations-page">
-
         <section className="digital-invitations-hero">
           <div className="container">
             <div className="digital-invitations-hero-grid">
@@ -27,20 +46,18 @@ const PartecipazioniDigitaliPage = () => {
                   PARTECIPAZIONI DIGITALI
                 </p>
 
-                <h1>
-                  Partecipazioni digitali personalizzate per il vostro
-                  matrimonio
-                </h1>
+                <h1>Il vostro invito, semplice da condividere e da gestire</h1>
 
                 <p className="digital-invitations-intro">
-                  Ogni invitato riceve una partecipazione creata nello stile del
-                  vostro matrimonio e un codice personale da utilizzare sul sito
-                  dedicato per confermare o meno la propria presenza.
+                  Creiamo una partecipazione coordinata allo stile del vostro
+                  matrimonio. Ogni invito può avere un codice personale che
+                  permette agli invitati di confermare la propria presenza
+                  direttamente dal vostro sito.
                 </p>
 
                 <div className="digital-invitations-hero-actions">
                   <a href="#come-funziona" className="btn btn-primary-custom">
-                    Scopri come funziona
+                    Come funziona
                   </a>
 
                   <a
@@ -52,20 +69,13 @@ const PartecipazioniDigitaliPage = () => {
                     Richiedi informazioni
                   </a>
                 </div>
-
-                <p className="digital-invitations-hero-price">
-                  Incluse nel pacchetto base da <strong>300 €</strong>
-                </p>
               </div>
 
               <div className="digital-invitations-preview">
                 <div className="digital-invitations-paper">
                   <p>SIAMO FELICI DI INVITARVI</p>
-
                   <h2>Sposa &amp; Sposo</h2>
-
                   <div className="digital-invitations-paper-line"></div>
-
                   <span>Il nostro matrimonio</span>
 
                   <div className="digital-invitations-code">
@@ -78,11 +88,6 @@ const PartecipazioniDigitaliPage = () => {
                     partecipazione.
                   </p>
                 </div>
-
-                <div className="digital-invitations-floating-card">
-                  <span>✓</span>
-                  Conferma online
-                </div>
               </div>
             </div>
           </div>
@@ -93,70 +98,74 @@ const PartecipazioniDigitaliPage = () => {
             <Reveal>
               <div className="digital-invitations-heading">
                 <p className="digital-invitations-eyebrow">COME FUNZIONA</p>
-
-                <h2>
-                  Dalla partecipazione alla conferma in pochi semplici passaggi
-                </h2>
-
+                <h2>Dalla partecipazione alla conferma</h2>
                 <p>
-                  Il sistema è pensato per essere semplice sia per voi che per
-                  gli invitati.
+                  Un processo semplice per voi e immediato per i vostri invitati.
                 </p>
               </div>
             </Reveal>
 
             <div className="digital-invitations-steps">
-              <Reveal>
-                <article>
-                  <span>01</span>
+              {[
+                [
+                  "01",
+                  "La personalizziamo",
+                  "Scegliamo insieme colori, font, fotografie e testi.",
+                ],
+                [
+                  "02",
+                  "Creiamo i codici",
+                  "Ogni invitato o nucleo familiare può ricevere un codice univoco.",
+                ],
+                [
+                  "03",
+                  "La condividete",
+                  "La partecipazione può essere inviata comodamente tramite WhatsApp, email o altri canali digitali.",
+                ],
+                [
+                  "04",
+                  "Ricevete le risposte",
+                  "Gli invitati inseriscono il codice sul sito e confermano o rifiutano la partecipazione.",
+                ],
+              ].map(([number, title, text], index) => (
+                <Reveal key={number} delay={index * 70}>
+                  <article>
+                    <span>{number}</span>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
 
-                  <h3>Creiamo le partecipazioni</h3>
+        <section className="digital-invitations-personalization">
+          <div className="container">
+            <Reveal>
+              <div className="digital-invitations-heading">
+                <p className="digital-invitations-eyebrow">ESEMPI</p>
+                <h2>Ogni partecipazione può avere uno stile diverso</h2>
+                <p>
+                  Questi mockup mostrano alcune possibili impostazioni. Il
+                  risultato finale viene costruito sullo stile scelto da voi.
+                </p>
+              </div>
+            </Reveal>
 
-                  <p>
-                    Definiamo insieme stile, colori, testi, fotografie e font
-                    delle vostre partecipazioni digitali.
-                  </p>
-                </article>
-              </Reveal>
-
-              <Reveal delay={80}>
-                <article>
-                  <span>02</span>
-
-                  <h3>Assegniamo un codice</h3>
-
-                  <p>
-                    A ogni partecipazione viene associato un codice univoco
-                    collegato all'invitato o al nucleo familiare.
-                  </p>
-                </article>
-              </Reveal>
-
-              <Reveal delay={160}>
-                <article>
-                  <span>03</span>
-
-                  <h3>Condividete l'invito</h3>
-
-                  <p>
-                    Potete inviare la partecipazione direttamente ai vostri
-                    invitati, ad esempio tramite WhatsApp.
-                  </p>
-                </article>
-              </Reveal>
-
-              <Reveal delay={240}>
-                <article>
-                  <span>04</span>
-
-                  <h3>L'invitato conferma</h3>
-
-                  <p>
-                    Sul sito del matrimonio inserisce il proprio codice e
-                    comunica se parteciperà oppure no.
-                  </p>
-                </article>
-              </Reveal>
+            <div className="digital-invitations-personalization-grid">
+              {examples.map((example, index) => (
+                <Reveal key={example.names} delay={index * 80}>
+                  <article>
+                    <span>{example.eyebrow}</span>
+                    <h3>{example.names}</h3>
+                    <p>{example.date}</p>
+                    <p>
+                      Codice invito: <strong>{example.code}</strong>
+                    </p>
+                  </article>
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
@@ -170,17 +179,12 @@ const PartecipazioniDigitaliPage = () => {
                     CODICE PERSONALE
                   </p>
 
-                  <h2>Ogni partecipazione identifica il vostro invitato</h2>
+                  <h2>Le conferme vengono raccolte automaticamente</h2>
 
                   <p>
-                    Il codice univoco permette di collegare la risposta ricevuta
-                    alla persona o al nucleo familiare corretto, senza chiedere
-                    registrazioni o creare procedure complicate.
-                  </p>
-
-                  <p>
-                    Gli invitati devono semplicemente inserire il codice
-                    ricevuto e indicare se parteciperanno al matrimonio.
+                    Il codice collega la risposta alla persona corretta senza
+                    richiedere registrazioni. Voi potete vedere chi partecipa,
+                    chi non partecipa e chi deve ancora rispondere.
                   </p>
                 </div>
               </Reveal>
@@ -188,254 +192,16 @@ const PartecipazioniDigitaliPage = () => {
               <Reveal delay={120}>
                 <div className="digital-invitations-code-mockup">
                   <p>Conferma la tua partecipazione</p>
-
-                  <label htmlFor="demo-code">Inserisci il tuo codice</label>
-
+                  <span className="digital-invitations-code-label">
+                    CODICE PERSONALE
+                  </span>
                   <div className="digital-invitations-code-input">ND2407</div>
-
                   <span className="digital-invitations-code-button">
                     Continua
                   </span>
                 </div>
               </Reveal>
             </div>
-          </div>
-        </section>
-
-        <section className="digital-invitations-admin-section">
-          <div className="container">
-            <Reveal>
-              <div className="digital-invitations-heading">
-                <p className="digital-invitations-eyebrow">AREA RISERVATA</p>
-
-                <h2>Voi sapete sempre chi ha risposto</h2>
-
-                <p>
-                  Tutte le conferme vengono raccolte automaticamente nella
-                  vostra area riservata.
-                </p>
-              </div>
-            </Reveal>
-
-            <div className="digital-invitations-admin-grid">
-              <Reveal>
-                <article className="digital-invitations-admin-card">
-                  <strong>87</strong>
-
-                  <span>Confermati</span>
-                </article>
-              </Reveal>
-
-              <Reveal delay={80}>
-                <article className="digital-invitations-admin-card">
-                  <strong>12</strong>
-
-                  <span>Non partecipano</span>
-                </article>
-              </Reveal>
-
-              <Reveal delay={160}>
-                <article className="digital-invitations-admin-card">
-                  <strong>34</strong>
-
-                  <span>In attesa</span>
-                </article>
-              </Reveal>
-            </div>
-
-            <Reveal delay={200}>
-              <div className="digital-invitations-admin-info">
-                <div>
-                  <span>✓</span>
-
-                  <p>
-                    Lista degli invitati sempre aggiornata in base alle risposte
-                    ricevute.
-                  </p>
-                </div>
-
-                <div>
-                  <span>✓</span>
-
-                  <p>
-                    Possibilità di controllare facilmente chi deve ancora
-                    rispondere.
-                  </p>
-                </div>
-
-                <div>
-                  <span>✓</span>
-
-                  <p>Esportazione della lista aggiornata in formato PDF.</p>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        <section className="digital-invitations-personalization">
-          <div className="container">
-            <Reveal>
-              <div className="digital-invitations-heading">
-                <p className="digital-invitations-eyebrow">PERSONALIZZAZIONE</p>
-
-                <h2>Una partecipazione che rappresenta davvero voi</h2>
-
-                <p>
-                  La tecnologia rimane sullo sfondo. Davanti ci siete voi, con
-                  lo stile scelto per il vostro matrimonio.
-                </p>
-              </div>
-            </Reveal>
-
-            <div className="digital-invitations-personalization-grid">
-              <Reveal>
-                <article>
-                  <span>01</span>
-                  <h3>Colori</h3>
-                  <p>
-                    Palette e tonalità coerenti con il tema del vostro
-                    matrimonio.
-                  </p>
-                </article>
-              </Reveal>
-
-              <Reveal delay={80}>
-                <article>
-                  <span>02</span>
-                  <h3>Font</h3>
-                  <p>
-                    Tipografia scelta per creare l'atmosfera che desiderate.
-                  </p>
-                </article>
-              </Reveal>
-
-              <Reveal delay={160}>
-                <article>
-                  <span>03</span>
-                  <h3>Fotografie</h3>
-                  <p>
-                    Le vostre immagini possono diventare parte della
-                    partecipazione.
-                  </p>
-                </article>
-              </Reveal>
-
-              <Reveal delay={240}>
-                <article>
-                  <span>04</span>
-                  <h3>Testi</h3>
-                  <p>
-                    Nomi, frasi, informazioni e contenuti vengono adattati alle
-                    vostre esigenze.
-                  </p>
-                </article>
-              </Reveal>
-            </div>
-          </div>
-        </section>
-
-        <section className="digital-invitations-package">
-          <div className="container">
-            <Reveal>
-              <div className="digital-invitations-package-box">
-                <div className="digital-invitations-package-top">
-                  <div>
-                    <p className="digital-invitations-eyebrow">
-                      PACCHETTO BASE
-                    </p>
-
-                    <h2>Le partecipazioni sono già incluse nei 300 €</h2>
-                  </div>
-
-                  <strong>300 €</strong>
-                </div>
-
-                <div className="digital-invitations-package-grid">
-                  <div>
-                    <span>✓</span>
-                    <p>Partecipazioni digitali personalizzate</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Codice personale per ogni partecipazione</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Conferma o rifiuto della presenza online</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Sito personalizzato del matrimonio</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Area riservata per gli sposi</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Lista aggiornata ed esportazione PDF</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Dominio personalizzato</p>
-                  </div>
-
-                  <div>
-                    <span>✓</span>
-                    <p>Personalizzazione di foto, colori, testi e font</p>
-                  </div>
-                </div>
-
-                <Link
-                  to="/#prezzi"
-                  className="digital-invitations-package-link"
-                >
-                  Scopri tutti i servizi e gli extra
-                </Link>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        <section className="digital-invitations-paper-section">
-          <div className="container">
-            <Reveal>
-              <div className="digital-invitations-heading">
-                <p className="digital-invitations-eyebrow">
-                  DIGITALE E CARTACEO
-                </p>
-
-                <h2>Le due soluzioni possono anche convivere</h2>
-
-                <p>
-                  Se desiderate mantenere una partecipazione cartacea, potete
-                  utilizzarla insieme al sito digitale.
-                </p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={100}>
-              <div className="digital-invitations-paper-copy">
-                <p>
-                  La partecipazione cartacea può restare il vostro invito
-                  tradizionale, mentre il codice e il sito vengono utilizzati
-                  per raccogliere le conferme e mantenere le informazioni
-                  aggiornate.
-                </p>
-
-                <p>
-                  In questo modo mantenete l'eleganza dell'invito fisico senza
-                  rinunciare alla comodità della gestione digitale.
-                </p>
-              </div>
-            </Reveal>
           </div>
         </section>
 
@@ -447,15 +213,12 @@ const PartecipazioniDigitaliPage = () => {
                   LE VOSTRE PARTECIPAZIONI
                 </p>
 
-                <h2>
-                  Creiamo insieme una partecipazione pensata per il vostro
-                  matrimonio
-                </h2>
+                <h2>Creiamo un invito davvero vostro</h2>
 
                 <p>
-                  Raccontateci lo stile che avete scelto e scopriamo insieme
-                  come trasformarlo in una partecipazione digitale semplice da
-                  usare per tutti i vostri invitati.
+                  Raccontateci lo stile del matrimonio e prepariamo una
+                  partecipazione digitale coordinata, elegante e semplice da
+                  utilizzare.
                 </p>
 
                 <a
