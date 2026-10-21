@@ -17,8 +17,8 @@ const Footer = () => {
             </Link>
 
             <p className="footer-description">
-              Partecipazioni digitali personalizzate, sito del matrimonio e
-              gestione delle conferme in un unico spazio semplice da utilizzare.
+              Partecipazioni digitali personalizzate e un sito dedicato al
+              vostro matrimonio, semplice da condividere e da gestire.
             </p>
           </div>
 
@@ -27,30 +27,9 @@ const Footer = () => {
 
             <nav aria-label="Pagine principali">
               <Link to="/">Home</Link>
-
-              <Link to="/partecipazioni-digitali">Partecipazioni digitali</Link>
-
+              <Link to="/partecipazioni-digitali">Partecipazioni</Link>
               <Link to="/sito-matrimonio">Sito matrimonio</Link>
-
-              <Link to="/servizi-prezzi">Servizi e prezzi</Link>
-            </nav>
-          </div>
-
-          <div className="footer-column">
-            <h2>Organizzazione</h2>
-
-            <nav aria-label="Gestione matrimonio">
-              <Link to="/rsvp-matrimonio">Conferme invitati</Link>
-
-              <Link to="/gestione-invitati-matrimonio">Gestione invitati</Link>
-
-              <a
-                href="https://martaesimone.fun/#/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sito di esempio
-              </a>
+              <Link to="/servizi-prezzi">Prezzi</Link>
             </nav>
           </div>
 
@@ -68,6 +47,14 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 Prenota una chiamata
+              </a>
+
+              <a
+                href="https://martaesimone.fun/#/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sito di esempio
               </a>
             </nav>
           </div>
