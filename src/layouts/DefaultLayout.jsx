@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import Header from "../components/Header";
+import ContactCta from "../components/ContactCta";
 import Footer from "../components/Footer";
 
 const DefaultLayout = () => {
@@ -12,6 +13,7 @@ const DefaultLayout = () => {
         <Outlet />
       </main>
 
+      <ContactCta />
       <Footer />
     </>
   );
