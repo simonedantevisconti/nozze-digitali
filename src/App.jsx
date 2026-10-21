@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
 import DefaultLayout from "./layouts/DefaultLayout";
@@ -22,6 +22,15 @@ const App = () => {
           />
           <Route path="/sito-matrimonio" element={<SitoMatrimonioPage />} />
           <Route path="/servizi-prezzi" element={<ServiziPrezziPage />} />
+
+          <Route
+            path="/rsvp-matrimonio"
+            element={<Navigate to="/partecipazioni-digitali" replace />}
+          />
+          <Route
+            path="/gestione-invitati-matrimonio"
+            element={<Navigate to="/sito-matrimonio" replace />}
+          />
         </Route>
       </Routes>
     </>
