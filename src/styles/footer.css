@@ -10,7 +10,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.8fr repeat(3, 1fr);
+  grid-template-columns: 1.8fr repeat(2, 1fr);
   gap: 3rem;
 
   padding-bottom: 3.5rem;
