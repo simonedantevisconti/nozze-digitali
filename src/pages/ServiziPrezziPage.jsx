@@ -108,32 +108,6 @@ const ServiziPrezziPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="prices-cta">
-          <div className="container">
-            <Reveal>
-              <div className="prices-cta-box">
-                <p className="prices-eyebrow">RICHIEDI INFORMAZIONI</p>
-
-                <h2>Costruiamo il servizio in base al vostro matrimonio</h2>
-
-                <p>
-                  Scriveteci per capire quali funzioni possono esservi utili e
-                  quali invece potete lasciare fuori.
-                </p>
-
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="prices-cta-button"
-                >
-                  Scrivici su WhatsApp
-                </a>
-              </div>
-            </Reveal>
-          </div>
-        </section>
       </main>
     </>
   );
