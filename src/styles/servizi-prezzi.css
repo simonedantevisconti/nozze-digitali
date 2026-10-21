@@ -244,6 +244,46 @@
   line-height: 1.7;
 }
 
+.prices-extra-description {
+  margin-bottom: 1.25rem !important;
+
+  color: var(--color-text-light);
+
+  line-height: 1.7;
+}
+
+.prices-extra-list {
+  display: grid;
+  gap: 0.7rem;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.prices-extra-list li {
+  position: relative;
+
+  padding-left: 1.4rem;
+
+  color: var(--color-text);
+
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.prices-extra-list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+
+  color: var(--color-primary);
+
+  font-weight: 800;
+}
+
 /* EXAMPLE */
 
 .prices-example {
